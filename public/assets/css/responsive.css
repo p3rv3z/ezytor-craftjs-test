@@ -1,0 +1,17 @@
+@media (min-width:1400px) and (max-width:1550px) {
+    ._container_active {
+        min-width: 670px;
+    }
+}
+@media(min-width:1200px) and (max-width:1399px) {
+    ._container_active {
+        border: 2px dashed #555;
+        height: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 530px;
+    }
+    ._add_tab_section_layout_inner {
+        flex-basis: 30%;
+    }
+}
