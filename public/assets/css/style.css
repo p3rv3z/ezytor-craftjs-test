@@ -442,12 +442,16 @@ input {
 ._cursor {
     cursor: default;
 }
+/*-- div block css --*/
 ._div_block_active {
     border: 2px dashed #555;
     height: 50px;
     width:100%;
 }
-._list_link_active {
+/*-- div block css --*/
+
+/*---list ----*/
+._list_item1{
     outline: 2px dashed #555 !important;
     outline-offset: -1px !important;
     -webkit-box-shadow: inset 0 0 0 4px rgb(0 0 0 / 10%), inset 0 0 0 4px rgb(255 255 255 / 20%), inset 0 0 0 1px rgb(255 255 255 / 30%);
@@ -455,6 +459,39 @@ input {
     height: 75px;
     min-width: 75px;
 }
+._list_item2{
+    outline: 2px dashed #555 !important;
+    outline-offset: -1px !important;
+    -webkit-box-shadow: inset 0 0 0 4px rgb(0 0 0 / 10%), inset 0 0 0 4px rgb(255 255 255 / 20%), inset 0 0 0 1px rgb(255 255 255 / 30%);
+    box-shadow: inset 0 0 0 4px rgb(0 0 0 / 10%), inset 0 0 0 4px rgb(255 255 255 / 20%), inset 0 0 0 1px rgb(255 255 255 / 30%);
+    height: 75px;
+    min-width: 75px;
+}
+._list_item3{
+    outline: 2px dashed #555 !important;
+    outline-offset: -1px !important;
+    -webkit-box-shadow: inset 0 0 0 4px rgb(0 0 0 / 10%), inset 0 0 0 4px rgb(255 255 255 / 20%), inset 0 0 0 1px rgb(255 255 255 / 30%);
+    box-shadow: inset 0 0 0 4px rgb(0 0 0 / 10%), inset 0 0 0 4px rgb(255 255 255 / 20%), inset 0 0 0 1px rgb(255 255 255 / 30%);
+    height: 75px;
+    min-width: 75px;
+}
+/*---list ----*/
+
+/*---editor list --*/
+._editor_list {
+    list-style: none;
+}
+._list_item1{
+    outline: 2px dashed #555 !important;
+    outline-offset: -1px !important;
+    -webkit-box-shadow: inset 0 0 0 4px rgb(0 0 0 / 10%), inset 0 0 0 4px rgb(255 255 255 / 20%), inset 0 0 0 1px rgb(255 255 255 / 30%);
+    box-shadow: inset 0 0 0 4px rgb(0 0 0 / 10%), inset 0 0 0 4px rgb(255 255 255 / 20%), inset 0 0 0 1px rgb(255 255 255 / 30%);
+    height: 75px;
+    min-width: 75px;
+}
+/*---editor list --*/
+
+/*---line block --*/
 ._link_block_active {
     max-width: 100%;
     display: inline-block;
@@ -466,6 +503,9 @@ input {
     font-size: 0;
     cursor: default;
 }
+/*---line block --*/
+
+/*----heading css ---*/
 ._heading_active {
     font-size: 38px;
     line-height: 1.2;
@@ -478,6 +518,9 @@ input {
     -ms-user-select: text;
     user-select: text;
 }
+/*----heading css ---*/
+
+/*----paragraph css ---*/
 ._paragraph_active {
     outline: none;
     -webkit-box-shadow: 0 0 0px 4px rgb(23 141 247 / 20%);
@@ -489,6 +532,9 @@ input {
     font-size: 12px;
     line-height: 1.6;
 }
+/*----paragraph css ---*/
+
+/*----button css ---*/
 ._button_active {
     display: inline-block;
     padding: 9px 15px;
@@ -501,6 +547,9 @@ input {
     border-radius: 0;
     width: fit-content;
 }
+/*----button css ---*/
+
+/*----blockquote css ---*/
 ._blockquote_active {
     margin: 0 0 10px 0;
     padding: 10px 20px;
@@ -508,9 +557,15 @@ input {
     font-size: 18px;
     line-height: 22px;
 }
+/*----blockquote css ---*/
+
+/*--- image css ---*/
 ._image_active {
     max-width: 140px;
 }
+/*--- image css ---*/
+
+/*--- video css ---*/
 ._video_active {
     background-image: url(https://d3e54v103j8qbb.cloudfront.net/static/video-placeholder.v1.svg);
     background-size: cover;
@@ -520,6 +575,9 @@ input {
     width: 100%;
     position: relative;
 }
+/*--- video css ---*/
+
+/*--- youtube css ---*/
 ._youtube_active {
     background-image: url(https://d3e54v103j8qbb.cloudfront.net/static/youtube-placeholder.2b05e7d68d.svg);
     background-size: cover;
@@ -529,3 +587,4 @@ input {
     width: 100%;
     position: relative;
 }
+/*--- youtube css ---*/

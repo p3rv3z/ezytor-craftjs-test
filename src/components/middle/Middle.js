@@ -6,7 +6,7 @@ function Middle() {
             <div className="_layout_middle_inner">
                     {/* <div className="_section_active _selected_active"></div> */}
                     {/* <div className="_container_active"></div> */}
-                    <div className="_column_area">
+                    {/* <div className="_column_area">
                         <div className="row my-2 _custom_row_center">
                             <div className="col col-md-6 _custom_col text-center">
                             col
@@ -122,7 +122,12 @@ function Middle() {
                             col
                             </div>
                         </div>
-                    </div>
+                    </div> */}
+                    <ul className="_list">
+                           <li className="_list_item1"></li>
+                           <li className="_list_item2"></li>
+                           <li className="_list_item3"></li>
+                    </ul>
                     {/* <div className="_cursor">
                         <div className="_col_active"></div>
                     </div> */}
