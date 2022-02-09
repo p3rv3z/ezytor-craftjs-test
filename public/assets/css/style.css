@@ -134,6 +134,7 @@ input {
     align-items: center;
     flex: 0 1 auto;
     padding-right: 209px;
+    margin:0 0 10px;
 }
 ._add_tab_section_header_title {
     font-size: 12px;
@@ -296,7 +297,7 @@ input {
 ._add_tab_section_size_info {
     display: flex;
     align-items: center;
-    flex: 0 0 118px;
+    flex: 0 0 128px;
     margin: 0 0 10px;
 }
 ._add_tab_section_size_info_txt {
@@ -588,3 +589,12 @@ input {
     position: relative;
 }
 /*--- youtube css ---*/
+
+/*---Margin & padding ---*/
+._spacing_txt {
+    color:#fff;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-decoration: underline;
+}
