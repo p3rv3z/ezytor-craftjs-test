@@ -23,7 +23,7 @@ function Home() {
                                 <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12 _custom_column">
                                     <Frame>
                                         {/* <Middle /> */}
-                                        <Element is="div" id="main" className="main" canvas>
+                                        <Element is={Main} id="main" canvas>
                                             <Heading text="Heading" />
                                         </Element>
                                     </Frame>

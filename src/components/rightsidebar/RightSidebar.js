@@ -17,7 +17,7 @@ function RightSidebar() {
                 </div>
                 <div className="_add_tab_elements">
                     <div className="_add_tab_section_layout">
-                        <div className="_add_tab_section_header">
+                        {/* <div className="_add_tab_section_header">
                             <div className="_add_tab_section_header_icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-opacity="0.7" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg>
                             </div>
@@ -87,9 +87,9 @@ function RightSidebar() {
                                 </div>
                                 <input autocomplete="off" autocorrect="off" autocaptialize="off" spellcheck="false" data-automation-id="css-token-input" placeholder="Cover"></input>
                             </div>
-                        </div>
+                        </div> */}
                         {/* Margin*/}
-                        <div className="_add_tab_section_header">
+                        {/* <div className="_add_tab_section_header">
                             <div className="_add_tab_section_header_icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-opacity="0.7" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg>
                             </div>
@@ -123,10 +123,10 @@ function RightSidebar() {
                                     <input type="number" autocomplete="off" autocorrect="off" autocaptialize="off" spellcheck="false" data-automation-id="css-token-input" placeholder="0px"></input>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                         {/* Margin*/}
                         {/*Padding*/}
-                        <div className="_spacing">
+                        {/* <div className="_spacing">
                             <p class="_spacing_txt">Padding -</p>
                             <div className="_add_tab_section_size">
                                 <div className="_add_tab_section_size_info">
@@ -154,9 +154,9 @@ function RightSidebar() {
                                     <input type="number" autocomplete="off" autocorrect="off" autocaptialize="off" spellcheck="false" data-automation-id="css-token-input" placeholder="0px"></input>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                         {/*Padding*/}
-                        <div className="_add_tab_section_header">
+                        {/* <div className="_add_tab_section_header">
                             <div className="_add_tab_section_header_icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-opacity="0.7" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg>
                             </div>
@@ -174,7 +174,7 @@ function RightSidebar() {
                                         <option value={3}>Sticky</option>
                                     </select>
                                 </div>
-                        </div>
+                        </div> */}
                         <div className="_add_tab_section_header">
                             <div className="_add_tab_section_header_icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-opacity="0.7" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg>
@@ -219,7 +219,7 @@ function RightSidebar() {
                                 <input autocomplete="off" autocorrect="off" autocaptialize="off" spellcheck="false" data-automation-id="css-token-input" placeholder="Center"></input>
                             </div>
                         </div>
-                        <div className="_add_tab_section_header">
+                        {/* <div className="_add_tab_section_header">
                             <div className="_add_tab_section_header_icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-opacity="0.7" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg>
                             </div>
@@ -276,7 +276,7 @@ function RightSidebar() {
                                 </div>
                                 <input autoComplete="off" autoCorrect="off" autocaptialize="off" spellCheck="false" data-automation-id="css-token-input" placeholder="1px solid" />
                             </div>
-                        </div>
+                        </div> */}
                 </div>
             </div>
         </div>
