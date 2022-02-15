@@ -5,6 +5,7 @@ import RightSidebar from '../../components/rightsidebar/RightSidebar';
 import { Editor, Frame, Element } from "@craftjs/core";
 import { Heading } from '../../components/elements/heading/Heading'
 import { Container } from '../../components/elements/container/Container'
+import { Section } from '../../components/elements/Section';
 import { Main } from '../../components/elements/main/Main';
 
 function Home() {
@@ -14,7 +15,7 @@ function Home() {
             <div className="_editor_home_wrap">
                 <div className="container-fluid _custom_container">
                     <div className="_layout_inner_wrap">
-                        <Editor resolver={{ Heading, Container, Main }}>
+                        <Editor resolver={{ Heading, Container, Main,Section }}>
                             <div class="row">
                                 <div className="col-xl-3 col-lg-3 col-md-12 col-sm-12 _custom_column">
                                     <Toolbox />
