@@ -2,7 +2,7 @@ import React from "react";
 import { Element, useNode } from "@craftjs/core";
 
 
-export const Colum = ({children}) => {
+export const Col = ({children}) => {
     const { connectors: { connect, drag } } = useNode();
 
     return (
