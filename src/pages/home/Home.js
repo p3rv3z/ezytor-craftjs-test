@@ -1,7 +1,6 @@
 import React from 'react';
 import Toolbox from '../../components/toolbox';
-// import Middle from '../../components/middle/Middle';
-import RightSidebar from '../../components/rightsidebar/RightSidebar';
+import SettingsPanel from '../../components/settingsPanel';
 import { Editor, Frame, Element } from "@craftjs/core";
 import { Heading } from '../../components/elements/heading'
 import { Container } from '../../components/elements/container/Container'
@@ -17,7 +16,6 @@ import { Colums } from '../../components/elements/ColumSection';
 function Home() {
     return (
         <div className="_editor_home_wrapper">
-
             <div className="_editor_home_wrap">
                 <div className="container-fluid _custom_container">
                     <div className="_layout_inner_wrap">
@@ -35,7 +33,7 @@ function Home() {
                                     </Frame>
                                 </div>
                                 <div className="col-xl-3 col-lg-3 col-md-12 col-sm-12 _custom_column">
-                                    <RightSidebar />
+                                    <SettingsPanel />
                                 </div>
                             </div>
                         </ Editor>

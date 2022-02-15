@@ -510,9 +510,6 @@ input {
 
 /*----heading css ---*/
 ._heading_active {
-    font-size: 38px;
-    line-height: 1.2;
-    margin-top: 20px;
     outline: none;
     -webkit-box-shadow: 0 0 0px 4px rgb(23 141 247 / 20%);
     box-shadow: 0 0 0px 4px rgb(23 141 247 / 20%);
