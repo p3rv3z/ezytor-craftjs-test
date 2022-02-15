@@ -31,8 +31,6 @@ export const List = ({ children }) => {
 }
 
 
-
-
 List.craft = {
   rules: {
     // Only accept Text
