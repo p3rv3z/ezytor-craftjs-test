@@ -1,7 +1,11 @@
 import React from 'react';
 import { Element, useEditor } from "@craftjs/core";
-import { Heading } from '../elements/heading/Heading';
+import { Heading } from '../elements/heading';
+import { Paragraph } from '../elements/paragraph';
 import { Container } from '../elements/container/Container';
+import { Div } from '../elements/div';
+import { List } from '../../components/elements/list';
+import { ListItem } from '../../components/elements/listItem';
 
 
 function Toolbox() {
@@ -71,7 +75,7 @@ function Toolbox() {
                                     <h4 className="_add_tab_section_header_title">Basic</h4>
                                 </div>
                                 <div className="_add_tab_section_layout_wrap">
-                                    <div className="_add_tab_section_layout_inner">
+                                    <div ref={ref=> connectors.create(ref, <Element is={Div} id="div" canvas/>)} className="_add_tab_section_layout_inner">
                                         <div className="_add_tab_icon">
                                             <svg data-icon="index" aria-hidden="true" focusable="false" width="36" height="36" viewBox="0 0 36 36" class="bem-Svg"><path opacity=".2" fill="#fff" d="M1 1h34v34H1z"></path><g fill="#fff"><path d="M1 1h2v4H1zm32 0h2v4h-2zM3 1h2v2H3zm10 0h4v2h-4zM7 1h4v2H7zm12 0h4v2h-4zm-6 32h4v2h-4zm-6 0h4v2H7zm12 0h4v2h-4zm6-32h4v2h-4zm0 32h4v2h-4z"></path><path d="M31 1h4v2h-4zm2 30h2v4h-2zM1 31h2v4H1zm0-18h2v4H1zm0-6h2v4H1zm32 6h2v4h-2zM1 19h2v4H1zm32 0h2v4h-2zM1 25h2v4H1zm32 0h2v4h-2zm0-18h2v4h-2zm-2 26h2v2h-2z"></path><path d="M1 33h4v2H1z"></path></g><path opacity=".4" d="M35 1v34H1V1h34m1-1H0v36h36V0z"></path></svg>
                                         </div>
@@ -79,7 +83,7 @@ function Toolbox() {
                                             <p className="_add_tab_icon_txt_para">Div Block</p>
                                         </div>
                                     </div>
-                                    <div className="_add_tab_section_layout_inner">
+                                    <div ref={ref=> connectors.create(ref, <Element is={List} id="list" canvas/>)} className="_add_tab_section_layout_inner">
                                         <div className="_add_tab_icon">
                                             <svg data-icon="index" aria-hidden="true" focusable="false" width="48" height="36" viewBox="0 0 48 36" class="bem-Svg"><path opacity=".2" fill="#fff" d="M1 1h46v34H1z"></path><g fill="currentColor"><path d="M1 1h2v4H1zm44 0h2v4h-2zM3 1h2v2H3zm10 0h4v2h-4zM7 1h4v2H7zm12 0h4v2h-4zm-6 32h4v2h-4zm-6 0h4v2H7zm12 0h4v2h-4zm6-32h4v2h-4zm0 32h4v2h-4zm6-32h4v2h-4zm0 32h4v2h-4zm6-32h4v2h-4zm0 32h4v2h-4z"></path><path d="M43 1h4v2h-4zm2 30h2v4h-2zM1 31h2v4H1zm0-18h2v4H1zm0-6h2v4H1zm44 6h2v4h-2zM1 19h2v4H1zm44 0h2v4h-2zM1 25h2v4H1zm44 0h2v4h-2zm0-18h2v4h-2zm-2 26h2v2h-2z"></path><path d="M1 33h4v2H1z"></path></g><path opacity=".5" fill="#fff" d="M18 14v-4h20v4H18m-2-6v8h24V8M18 26v-4h20v4H18m-2-6v8h24v-8"></path><circle fill="currentColor" cx="10" cy="12" r="2" opacity=".5"></circle><circle fill="#fff" cx="10" cy="24" r="2" opacity=".5"></circle><path opacity=".4" d="M47 1v34H1V1h46m1-1H0v36h48V0z"></path></svg>
                                         </div>
@@ -87,7 +91,7 @@ function Toolbox() {
                                             <p className="_add_tab_icon_txt_para">List</p>
                                         </div>
                                     </div>
-                                    <div className="_add_tab_section_layout_inner">
+                                    <div ref={ref=> connectors.create(ref, <Element is={ListItem} id="listItem" canvas/>)} className="_add_tab_section_layout_inner">
                                         <div className="_add_tab_icon">
                                             <svg data-icon="index" aria-hidden="true" focusable="false" width="48" height="36" viewBox="0 0 48 36" class="bem-Svg"><g opacity=".3" fill="#fff"><path d="M1 1h2v4H1zm44 0h2v4h-2zM3 1h2v2H3zm10 0h4v2h-4zM7 1h4v2H7zm12 0h4v2h-4zm-6 32h4v2h-4zm-6 0h4v2H7zm12 0h4v2h-4zm6-32h4v2h-4zm0 32h4v2h-4zm6-32h4v2h-4zm0 32h4v2h-4zm6-32h4v2h-4zm0 32h4v2h-4z"></path><path d="M43 1h4v2h-4zm2 30h2v4h-2zM1 31h2v4H1zm0-18h2v4H1zm0-6h2v4H1zm44 6h2v4h-2zM1 19h2v4H1zm44 0h2v4h-2zM1 25h2v4H1zm44 0h2v4h-2zm0-18h2v4h-2zm-2 26h2v2h-2z"></path><path d="M1 33h4v2H1z"></path></g><circle cx="9" cy="12" r="3" opacity=".4"></circle><circle fill="#fff" cx="9" cy="12" r="2"></circle><circle cx="9" cy="24" r="3" opacity=".4"></circle><circle fill="#fff" cx="9" cy="24" r="2"></circle><path fill="#fff" d="M38 10v4H18v-4h20m2-2H16v8h24V8z"></path><path opacity=".2" fill="#fff" d="M18 10h20v4H18z"></path><path opacity=".4" d="M40 8v8H16V8h24m1-1H15v10h26V7z"></path><path fill="#fff" d="M38 22v4H18v-4h20m2-2H16v8h24v-8z"></path><path opacity=".2" fill="#fff" d="M18 22h20v4H18z"></path><path opacity=".4" d="M40 20v8H16v-8h24m1-1H15v10h26V19z"></path></svg>
                                         </div>
@@ -129,7 +133,7 @@ function Toolbox() {
                                             <p className="_add_tab_icon_txt_para"  >Heading</p>
                                         </div>
                                     </div>
-                                    <div className="_add_tab_section_layout_inner">
+                                    <div className="_add_tab_section_layout_inner" ref={ref=> connectors.create(ref, <Paragraph text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged." />)}>
                                         <div className="_add_tab_icon">
                                             <svg data-icon="index" aria-hidden="true" focusable="false" width="59" height="16" viewBox="0 0 59 16" class="bem-Svg"><path opacity=".4" d="M0 0v16h29v-4h29V8h-1V4h2V0H0zm1 7h55H1zm57-4H1h57z"></path><path fill="#fff" d="M1 1v2h57V1H1zm55 4H1v2h55V5zM1 11h56V9H1v2zm0 4h27v-2H1v2z"></path></svg>
                                         </div>
