@@ -5,11 +5,13 @@ import RightSidebar from '../../components/rightsidebar/RightSidebar';
 import { Editor, Frame, Element } from "@craftjs/core";
 import { Heading } from '../../components/elements/heading'
 import { Container } from '../../components/elements/container/Container'
+import { Section } from '../../components/elements/Section';
 import { Main } from '../../components/elements/main/Main';
 import { Paragraph } from '../../components/elements/paragraph';
 import { Div } from '../../components/elements/div';
 import { List } from '../../components/elements/list';
 import { ListItem } from '../../components/elements/listItem';
+import { Colums } from '../../components/elements/ColumSection';
 
 function Home() {
     return (
@@ -18,7 +20,7 @@ function Home() {
             <div className="_editor_home_wrap">
                 <div className="container-fluid _custom_container">
                     <div className="_layout_inner_wrap">
-                        <Editor resolver={{ Heading, Container, Main, Paragraph, Div, List, ListItem }}>
+                        <Editor resolver={{ Heading, Container, Main, Paragraph, Div, List, ListItem,Section, Colums }}>
                             <div class="row">
                                 <div className="col-xl-3 col-lg-3 col-md-12 col-sm-12 _custom_column">
                                     <Toolbox />
