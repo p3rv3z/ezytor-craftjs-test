@@ -7,6 +7,7 @@ import { Heading } from '../../components/elements/heading/Heading'
 import { Container } from '../../components/elements/container/Container'
 import { Section } from '../../components/elements/Section';
 import { Main } from '../../components/elements/main/Main';
+import { Colums } from '../../components/elements/ColumSection';
 
 function Home() {
     return (
@@ -15,7 +16,7 @@ function Home() {
             <div className="_editor_home_wrap">
                 <div className="container-fluid _custom_container">
                     <div className="_layout_inner_wrap">
-                        <Editor resolver={{ Heading, Container, Main,Section }}>
+                        <Editor resolver={{ Heading, Container, Main,Section , Colums }}>
                             <div class="row">
                                 <div className="col-xl-3 col-lg-3 col-md-12 col-sm-12 _custom_column">
                                     <Toolbox />
