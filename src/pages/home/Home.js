@@ -1,26 +1,38 @@
 import React from 'react';
-import LeftSidebar from '../../components/leftsidebar/LeftSidebar';
-import Middle from '../../components/middle/Middle';
+import Toolbox from '../../components/leftsidebar/LeftSidebar';
+// import Middle from '../../components/middle/Middle';
 import RightSidebar from '../../components/rightsidebar/RightSidebar';
+import { Editor, Frame, Element } from "@craftjs/core";
+import { Heading } from '../../components/elements/heading/Heading'
+import { Container } from '../../components/elements/container/Container'
+import { Main } from '../../components/elements/main/Main';
 
 function Home() {
     return (
         <div className="_editor_home_wrapper">
+
             <div className="_editor_home_wrap">
                 <div className="container-fluid _custom_container">
-                <div className="_layout_inner_wrap">
-                    <div class="row">
-                        <div className="col-xl-3 col-lg-3 col-md-12 col-sm-12 _custom_column">
-                            <LeftSidebar />
-                        </div>
-                        <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12 _custom_column">
-                            <Middle />
-                        </div>
-                        <div className="col-xl-3 col-lg-3 col-md-12 col-sm-12 _custom_column">
-                            <RightSidebar />
-                        </div>
+                    <div className="_layout_inner_wrap">
+                        <Editor resolver={{ Heading, Container, Main }}>
+                            <div class="row">
+                                <div className="col-xl-3 col-lg-3 col-md-12 col-sm-12 _custom_column">
+                                    <Toolbox />
+                                </div>
+                                <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12 _custom_column">
+                                    <Frame>
+                                        {/* <Middle /> */}
+                                        <Element is="div" id="main" className="main" canvas>
+                                            <Heading text="Heading" />
+                                        </Element>
+                                    </Frame>
+                                </div>
+                                <div className="col-xl-3 col-lg-3 col-md-12 col-sm-12 _custom_column">
+                                    <RightSidebar />
+                                </div>
+                            </div>
+                        </ Editor>
                     </div>
-                </div>
                 </div>
             </div>
         </div>

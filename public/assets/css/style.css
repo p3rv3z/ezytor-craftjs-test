@@ -422,7 +422,7 @@ input {
 }
 ._container_active {
     border: 2px dashed #555;
-    height: 50px;
+    height: 70px;
     margin-left: auto;
     margin-right: auto;
     min-width: 780px;
@@ -597,4 +597,9 @@ input {
     font-weight: 600;
     line-height: 1.2;
     text-decoration: underline;
+}
+.main{
+    padding: 40px;
+    width: 100%;
+    height: auto;
 }
