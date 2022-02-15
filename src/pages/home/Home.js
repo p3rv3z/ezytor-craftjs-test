@@ -20,7 +20,7 @@ function Home() {
             <div className="_editor_home_wrap">
                 <div className="container-fluid _custom_container">
                     <div className="_layout_inner_wrap">
-                        <Editor resolver={{ Heading, Container, Main, Paragraph, Div, List, ListItem,Section, Colums }}>
+                        <Editor resolver={{ Heading, Container, Main, Paragraph, Div, List, ListItem, Section, Colums }}>
                             <div class="row">
                                 <div className="col-xl-3 col-lg-3 col-md-12 col-sm-12 _custom_column">
                                     <Toolbox />
