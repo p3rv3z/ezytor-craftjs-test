@@ -24,6 +24,7 @@ export default function SettingsPanel() {
             <div className="_editor_rightsidebar">
                 <div className="_panel_select_header">
                     <div className="_panel_select_header_txt">
+                        <h4 className="_panel_select_header_title">{ selected ? selected.name : 'None Selected' }</h4>
                         <h4 className="_panel_select_header_title">Select</h4>
                     </div>
                     <div className="_panel_input_area">
@@ -32,14 +33,8 @@ export default function SettingsPanel() {
                             <input autocomplete="off" autocorrect="off" autocaptialize="off" spellcheck="false" data-automation-id="css-token-input" placeholder="Select a Class or Tag"></input>
                         </div>
                     </div>
-                    <div className="_add_tab_section_header">
-                        <div className="_add_tab_section_header_icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-opacity="0.7" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg>
-                        </div>
-                        <h4 className="_add_tab_section_header_title">{ selected ? selected.name : 'None' }</h4>
-                    </div>
-                    {selected && selected.settings && React.createElement(selected.settings)}
                 </div>
+                    {selected && selected.settings && React.createElement(selected.settings)}
             </div >
         </div >
     );
