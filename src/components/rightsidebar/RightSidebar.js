@@ -10,8 +10,8 @@ function RightSidebar() {
                     </div>
                     <div className="_panel_input_area">
                         <div className="_panel_input_area_inner">
-                            <svg data-icon="Add" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" class="bem-Svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9 2H7v5H2v2h5v5h2V9h5V7H9V2z" fill="currentColor"></path></svg>
-                            <input autocomplete="off" autocorrect="off" autocaptialize="off" spellcheck="false" data-automation-id="css-token-input" placeholder="Select a Class or Tag"></input>
+                            <svg data-icon="Add" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" class="bem-Svg"><path fillRule="evenodd" clipRule="evenodd" d="M9 2H7v5H2v2h5v5h2V9h5V7H9V2z" fill="currentColor"></path></svg>
+                            <input autoComplete="off" autoCorrect="off" autocaptialize="off" spellCheck="false" data-automation-id="css-token-input" placeholder="Select a Class or Tag"></input>
                         </div>
                     </div>
                 </div>
@@ -19,7 +19,7 @@ function RightSidebar() {
                     <div className="_add_tab_section_layout">
                         {/* <div className="_add_tab_section_header">
                             <div className="_add_tab_section_header_icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-opacity="0.7" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeOpacity="0.7" strokeLinecap="round" strokeLinejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg>
                             </div>
                                 <h4 className="_add_tab_section_header_title">Layout</h4>
                         </div>
@@ -40,7 +40,7 @@ function RightSidebar() {
                         </div>
                         <div className="_add_tab_section_header">
                             <div className="_add_tab_section_header_icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-opacity="0.7" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeOpacity="0.7" strokeLinecap="round" strokeLinejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg>
                             </div>
                                 <h4 className="_add_tab_section_header_title">Size</h4>
                         </div>
@@ -49,49 +49,49 @@ function RightSidebar() {
                                 <div className="_add_tab_section_size_info_txt">
                                     <h4 className="_add_tab_section_drop_title">Width:</h4>
                                 </div>
-                                <input autocomplete="off" autocorrect="off" autocaptialize="off" spellcheck="false" data-automation-id="css-token-input" placeholder="Auto"></input>
+                                <input autoComplete="off" autoCorrect="off" autocaptialize="off" spellCheck="false" data-automation-id="css-token-input" placeholder="Auto"></input>
                             </div>
                             <div className="_add_tab_section_size_info">
                                 <div className="_add_tab_section_size_info_txt">
                                     <h4 className="_add_tab_section_drop_title">Height:</h4>
                                 </div>
-                                <input autocomplete="off" autocorrect="off" autocaptialize="off" spellcheck="false" data-automation-id="css-token-input" placeholder="Auto"></input>
+                                <input autoComplete="off" autoCorrect="off" autocaptialize="off" spellCheck="false" data-automation-id="css-token-input" placeholder="Auto"></input>
                             </div>
                             <div className="_add_tab_section_size_info">
                                 <div className="_add_tab_section_size_info_txt">
                                     <h4 className="_add_tab_section_drop_title">Min W:</h4>
                                 </div>
-                                <input autocomplete="off" autocorrect="off" autocaptialize="off" spellcheck="false" data-automation-id="css-token-input" placeholder="Auto"></input>
+                                <input autoComplete="off" autoCorrect="off" autocaptialize="off" spellCheck="false" data-automation-id="css-token-input" placeholder="Auto"></input>
                             </div>
                             <div className="_add_tab_section_size_info">
                                 <div className="_add_tab_section_size_info_txt">
                                     <h4 className="_add_tab_section_drop_title">Max W:</h4>
                                 </div>
-                                <input autocomplete="off" autocorrect="off" autocaptialize="off" spellcheck="false" data-automation-id="css-token-input" placeholder="Auto"></input>
+                                <input autoComplete="off" autoCorrect="off" autocaptialize="off" spellCheck="false" data-automation-id="css-token-input" placeholder="Auto"></input>
                             </div>
                             <div className="_add_tab_section_size_info">
                                 <div className="_add_tab_section_size_info_txt">
                                     <h4 className="_add_tab_section_drop_title">Min H:</h4>
                                 </div>
-                                <input autocomplete="off" autocorrect="off" autocaptialize="off" spellcheck="false" data-automation-id="css-token-input" placeholder="Auto"></input>
+                                <input autoComplete="off" autoCorrect="off" autocaptialize="off" spellCheck="false" data-automation-id="css-token-input" placeholder="Auto"></input>
                             </div>
                             <div className="_add_tab_section_size_info">
                                 <div className="_add_tab_section_size_info_txt">
                                     <h4 className="_add_tab_section_drop_title">Max H:</h4>
                                 </div>
-                                <input autocomplete="off" autocorrect="off" autocaptialize="off" spellcheck="false" data-automation-id="css-token-input" placeholder="Auto"></input>
+                                <input autoComplete="off" autoCorrect="off" autocaptialize="off" spellCheck="false" data-automation-id="css-token-input" placeholder="Auto"></input>
                             </div>
                             <div className="_add_tab_section_size_info">
                                 <div className="_add_tab_section_size_info_txt">
                                     <h4 className="_add_tab_section_drop_title">Fit:</h4>
                                 </div>
-                                <input autocomplete="off" autocorrect="off" autocaptialize="off" spellcheck="false" data-automation-id="css-token-input" placeholder="Cover"></input>
+                                <input autoComplete="off" autoCorrect="off" autocaptialize="off" spellCheck="false" data-automation-id="css-token-input" placeholder="Cover"></input>
                             </div>
                         </div> */}
                         {/* Margin*/}
                         {/* <div className="_add_tab_section_header">
                             <div className="_add_tab_section_header_icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-opacity="0.7" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeOpacity="0.7" strokeLinecap="round" strokeLinejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg>
                             </div>
                                 <h4 className="_add_tab_section_header_title">Margin & Padding</h4>
                         </div>
@@ -102,25 +102,25 @@ function RightSidebar() {
                                     <div className="_add_tab_section_size_info_txt">
                                         <h4 className="_add_tab_section_drop_title">Top:</h4>
                                     </div>
-                                    <input type="number" autocomplete="off" autocorrect="off" autocaptialize="off" spellcheck="false" data-automation-id="css-token-input" placeholder="0px"></input>
+                                    <input type="number" autoComplete="off" autoCorrect="off" autocaptialize="off" spellCheck="false" data-automation-id="css-token-input" placeholder="0px"></input>
                                 </div>
                                 <div className="_add_tab_section_size_info">
                                     <div className="_add_tab_section_size_info_txt">
                                         <h4 className="_add_tab_section_drop_title">Bottom:</h4>
                                     </div>
-                                    <input type="number" autocomplete="off" autocorrect="off" autocaptialize="off" spellcheck="false" data-automation-id="css-token-input" placeholder="0px"></input>
+                                    <input type="number" autoComplete="off" autoCorrect="off" autocaptialize="off" spellCheck="false" data-automation-id="css-token-input" placeholder="0px"></input>
                                 </div>
                                 <div className="_add_tab_section_size_info">
                                     <div className="_add_tab_section_size_info_txt">
                                         <h4 className="_add_tab_section_drop_title">Left:</h4>
                                     </div>
-                                    <input type="number" autocomplete="off" autocorrect="off" autocaptialize="off" spellcheck="false" data-automation-id="css-token-input" placeholder="0px"></input>
+                                    <input type="number" autoComplete="off" autoCorrect="off" autocaptialize="off" spellCheck="false" data-automation-id="css-token-input" placeholder="0px"></input>
                                 </div>
                                 <div className="_add_tab_section_size_info">
                                     <div className="_add_tab_section_size_info_txt">
                                         <h4 className="_add_tab_section_drop_title">Right:</h4>
                                     </div>
-                                    <input type="number" autocomplete="off" autocorrect="off" autocaptialize="off" spellcheck="false" data-automation-id="css-token-input" placeholder="0px"></input>
+                                    <input type="number" autoComplete="off" autoCorrect="off" autocaptialize="off" spellCheck="false" data-automation-id="css-token-input" placeholder="0px"></input>
                                 </div>
                             </div>
                         </div> */}
@@ -133,32 +133,32 @@ function RightSidebar() {
                                     <div className="_add_tab_section_size_info_txt">
                                         <h4 className="_add_tab_section_drop_title">Top:</h4>
                                     </div>
-                                    <input type="number" autocomplete="off" autocorrect="off" autocaptialize="off" spellcheck="false" data-automation-id="css-token-input" placeholder="0px"></input>
+                                    <input type="number" autoComplete="off" autoCorrect="off" autocaptialize="off" spellCheck="false" data-automation-id="css-token-input" placeholder="0px"></input>
                                 </div>
                                 <div className="_add_tab_section_size_info">
                                     <div className="_add_tab_section_size_info_txt">
                                         <h4 className="_add_tab_section_drop_title">Bottom:</h4>
                                     </div>
-                                    <input type="number" autocomplete="off" autocorrect="off" autocaptialize="off" spellcheck="false" data-automation-id="css-token-input" placeholder="0px"></input>
+                                    <input type="number" autoComplete="off" autoCorrect="off" autocaptialize="off" spellCheck="false" data-automation-id="css-token-input" placeholder="0px"></input>
                                 </div>
                                 <div className="_add_tab_section_size_info">
                                     <div className="_add_tab_section_size_info_txt">
                                         <h4 className="_add_tab_section_drop_title">Left:</h4>
                                     </div>
-                                    <input type="number" autocomplete="off" autocorrect="off" autocaptialize="off" spellcheck="false" data-automation-id="css-token-input" placeholder="0px"></input>
+                                    <input type="number" autoComplete="off" autoCorrect="off" autocaptialize="off" spellCheck="false" data-automation-id="css-token-input" placeholder="0px"></input>
                                 </div>
                                 <div className="_add_tab_section_size_info">
                                     <div className="_add_tab_section_size_info_txt">
                                         <h4 className="_add_tab_section_drop_title">Right:</h4>
                                     </div>
-                                    <input type="number" autocomplete="off" autocorrect="off" autocaptialize="off" spellcheck="false" data-automation-id="css-token-input" placeholder="0px"></input>
+                                    <input type="number" autoComplete="off" autoCorrect="off" autocaptialize="off" spellCheck="false" data-automation-id="css-token-input" placeholder="0px"></input>
                                 </div>
                             </div>
                         </div> */}
                         {/*Padding*/}
                         {/* <div className="_add_tab_section_header">
                             <div className="_add_tab_section_header_icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-opacity="0.7" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeOpacity="0.7" strokeLinecap="round" strokeLinejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg>
                             </div>
                                 <h4 className="_add_tab_section_header_title">Position</h4>
                         </div>
@@ -177,7 +177,7 @@ function RightSidebar() {
                         </div> */}
                         <div className="_add_tab_section_header">
                             <div className="_add_tab_section_header_icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-opacity="0.7" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeOpacity="0.7" strokeLinecap="round" strokeLinejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg>
                             </div>
                             <h4 className="_add_tab_section_header_title">Typography</h4>
                         </div>
@@ -186,42 +186,42 @@ function RightSidebar() {
                                 <div className="_add_tab_section_size_info_txt">
                                     <h4 className="_add_tab_section_drop_title">Font:</h4>
                                 </div>
-                                <input autocomplete="off" autocorrect="off" autocaptialize="off" spellcheck="false" data-automation-id="css-token-input" placeholder="Arial"></input>
+                                <input autoComplete="off" autoCorrect="off" autocaptialize="off" spellCheck="false" data-automation-id="css-token-input" placeholder="Arial"></input>
                             </div>
                             <div className="_add_tab_section_size_info">
                                 <div className="_add_tab_section_size_info_txt">
                                     <h4 className="_add_tab_section_drop_title">Weight:</h4>
                                 </div>
-                                <input autocomplete="off" autocorrect="off" autocaptialize="off" spellcheck="false" data-automation-id="css-token-input" placeholder="400"></input>
+                                <input autoComplete="off" autoCorrect="off" autocaptialize="off" spellCheck="false" data-automation-id="css-token-input" placeholder="400"></input>
                             </div>
                             <div className="_add_tab_section_size_info">
                                 <div className="_add_tab_section_size_info_txt">
                                     <h4 className="_add_tab_section_drop_title">Size:</h4>
                                 </div>
-                                <input autocomplete="off" autocorrect="off" autocaptialize="off" spellcheck="false" data-automation-id="css-token-input" placeholder="Auto"></input>
+                                <input autoComplete="off" autoCorrect="off" autocaptialize="off" spellCheck="false" data-automation-id="css-token-input" placeholder="Auto"></input>
                             </div>
                             <div className="_add_tab_section_size_info">
                                 <div className="_add_tab_section_size_info_txt">
                                     <h4 className="_add_tab_section_drop_title">Height:</h4>
                                 </div>
-                                <input autocomplete="off" autocorrect="off" autocaptialize="off" spellcheck="false" data-automation-id="css-token-input" placeholder="20px"></input>
+                                <input autoComplete="off" autoCorrect="off" autocaptialize="off" spellCheck="false" data-automation-id="css-token-input" placeholder="20px"></input>
                             </div>
                             <div className="_add_tab_section_size_info">
                                 <div className="_add_tab_section_size_info_txt">
                                     <h4 className="_add_tab_section_drop_title">Color:</h4>
                                 </div>
-                                <input autocomplete="off" autocorrect="off" autocaptialize="off" spellcheck="false" data-automation-id="css-token-input" placeholder="#fff"></input>
+                                <input autoComplete="off" autoCorrect="off" autocaptialize="off" spellCheck="false" data-automation-id="css-token-input" placeholder="#fff"></input>
                             </div>
                             <div className="_add_tab_section_size_info">
                                 <div className="_add_tab_section_size_info_txt">
                                     <h4 className="_add_tab_section_drop_title">Align:</h4>
                                 </div>
-                                <input autocomplete="off" autocorrect="off" autocaptialize="off" spellcheck="false" data-automation-id="css-token-input" placeholder="Center"></input>
+                                <input autoComplete="off" autoCorrect="off" autocaptialize="off" spellCheck="false" data-automation-id="css-token-input" placeholder="Center"></input>
                             </div>
                         </div>
                         {/* <div className="_add_tab_section_header">
                             <div className="_add_tab_section_header_icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-opacity="0.7" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeOpacity="0.7" strokeLinecap="round" strokeLinejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg>
                             </div>
                             <h4 className="_add_tab_section_header_title">Background</h4>
                         </div>
@@ -253,7 +253,7 @@ function RightSidebar() {
                         </div>
                         <div className="_add_tab_section_header">
                             <div className="_add_tab_section_header_icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-opacity="0.7" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeOpacity="0.7" strokeLinecap="round" strokeLinejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg>
                             </div>
                                 <h4 className="_add_tab_section_header_title">Borders</h4>
                         </div>
