@@ -1,7 +1,7 @@
 import React from "react";
 import { useNode } from "@craftjs/core";
 
-export const Settings = () => {
+export const HeadingSettings = () => {
     const { actions: { setProp }, fontSize, fontWeight, lineHeight, color, textAlign, fontFamily } = useNode((node) => ({
         fontSize: node.data.props.fontSize,
         fontWeight: node.data.props.fontWeight,

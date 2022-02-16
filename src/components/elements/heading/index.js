@@ -1,6 +1,6 @@
 import React from "react";
 import { useNode } from "@craftjs/core";
-import { Settings } from "./Settings";
+import { HeadingSettings } from "./HeadingSettings";
 
 export const Heading = ({ text, fontSize, fontWeight, lineHeight, color, textAlign, fontFamily }) => {
   const { connectors: { connect, drag }, isActive, actions: { setProp } } = useNode((node) => ({
@@ -33,6 +33,6 @@ Heading.craft = {
   },
 
   related: {
-    settings: Settings
+    settings: HeadingSettings
   }
 }
