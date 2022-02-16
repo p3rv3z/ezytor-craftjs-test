@@ -1,11 +1,30 @@
 import React from 'react';
+import { useEditor } from "@craftjs/core";
 
-function RightSidebar() {
-    return(
+export default function SettingsPanel() {
+
+    const { selected } = useEditor((state, query) => {
+        const currentNodeId = query.getEvent('selected').last();
+        let selected;
+
+        if (currentNodeId) {
+            selected = {
+                id: currentNodeId,
+                name: state.nodes[currentNodeId].data.name,
+                settings: state.nodes[currentNodeId].related && state.nodes[currentNodeId].related.settings
+            };
+        }
+
+        return { selected }
+    });
+
+    return (
+
         <div className="_layout_right_sidebar_wrap">
             <div className="_editor_rightsidebar">
                 <div className="_panel_select_header">
                     <div className="_panel_select_header_txt">
+                        <h4 className="_panel_select_header_title">{ selected ? selected.name : 'None Selected' }</h4>
                         <h4 className="_panel_select_header_title">Select</h4>
                     </div>
                     <div className="_panel_input_area">
@@ -15,9 +34,33 @@ function RightSidebar() {
                         </div>
                     </div>
                 </div>
-                <div className="_add_tab_elements">
-                    <div className="_add_tab_section_layout">
-                        {/* <div className="_add_tab_section_header">
+                    {selected && selected.settings && React.createElement(selected.settings)}
+            </div >
+        </div >
+    );
+}
+
+// return
+
+// (
+//     <div className="_layout_right_sidebar_wrap">
+//         <div className="_editor_rightsidebar">
+//             <div className="_panel_select_header">
+//                 <div className="_panel_select_header_txt">
+//                     <h4 className="_panel_select_header_title">Select</h4>
+//                 </div>
+//                 <div className="_panel_input_area">
+//                     <div className="_panel_input_area_inner">
+//                         <svg data-icon="Add" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" class="bem-Svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9 2H7v5H2v2h5v5h2V9h5V7H9V2z" fill="currentColor"></path></svg>
+//                         <input autocomplete="off" autocorrect="off" autocaptialize="off" spellcheck="false" data-automation-id="css-token-input" placeholder="Select a Class or Tag"></input>
+//                     </div>
+//                 </div>
+//             </div>
+//             {tools}
+
+{/* <div className="_add_tab_elements"> */ }
+{/* <div className="_add_tab_section_layout"> */ }
+{/* <div className="_add_tab_section_header">
                             <div className="_add_tab_section_header_icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeOpacity="0.7" strokeLinecap="round" strokeLinejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg>
                             </div>
@@ -88,8 +131,8 @@ function RightSidebar() {
                                 <input autoComplete="off" autoCorrect="off" autocaptialize="off" spellCheck="false" data-automation-id="css-token-input" placeholder="Cover"></input>
                             </div>
                         </div> */}
-                        {/* Margin*/}
-                        {/* <div className="_add_tab_section_header">
+{/* Margin*/ }
+{/* <div className="_add_tab_section_header">
                             <div className="_add_tab_section_header_icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeOpacity="0.7" strokeLinecap="round" strokeLinejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg>
                             </div>
@@ -124,9 +167,9 @@ function RightSidebar() {
                                 </div>
                             </div>
                         </div> */}
-                        {/* Margin*/}
-                        {/*Padding*/}
-                        {/* <div className="_spacing">
+{/* Margin*/ }
+{/*Padding*/ }
+{/* <div className="_spacing">
                             <p class="_spacing_txt">Padding -</p>
                             <div className="_add_tab_section_size">
                                 <div className="_add_tab_section_size_info">
@@ -155,8 +198,8 @@ function RightSidebar() {
                                 </div>
                             </div>
                         </div> */}
-                        {/*Padding*/}
-                        {/* <div className="_add_tab_section_header">
+{/*Padding*/ }
+{/* <div className="_add_tab_section_header">
                             <div className="_add_tab_section_header_icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeOpacity="0.7" strokeLinecap="round" strokeLinejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg>
                             </div>
@@ -175,7 +218,7 @@ function RightSidebar() {
                                     </select>
                                 </div>
                         </div> */}
-                        <div className="_add_tab_section_header">
+{/* <div className="_add_tab_section_header">
                             <div className="_add_tab_section_header_icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeOpacity="0.7" strokeLinecap="round" strokeLinejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg>
                             </div>
@@ -218,8 +261,8 @@ function RightSidebar() {
                                 </div>
                                 <input autoComplete="off" autoCorrect="off" autocaptialize="off" spellCheck="false" data-automation-id="css-token-input" placeholder="Center"></input>
                             </div>
-                        </div>
-                        {/* <div className="_add_tab_section_header">
+                        </div> */}
+{/* <div className="_add_tab_section_header">
                             <div className="_add_tab_section_header_icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeOpacity="0.7" strokeLinecap="round" strokeLinejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg>
                             </div>
@@ -277,11 +320,9 @@ function RightSidebar() {
                                 <input autoComplete="off" autoCorrect="off" autocaptialize="off" spellCheck="false" data-automation-id="css-token-input" placeholder="1px solid" />
                             </div>
                         </div> */}
-                </div>
-            </div>
-        </div>
-        </div>
-    )
-}
-
-export default RightSidebar;
+{/* </div> */ }
+{/* </div> */ }
+//         </div>
+//     </div>
+// )
+// }

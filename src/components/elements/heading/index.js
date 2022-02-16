@@ -1,8 +1,8 @@
 import React from "react";
 import { useNode } from "@craftjs/core";
-import { Settings } from "./Settings";
+import { HeadingSettings } from "./HeadingSettings";
 
-export const Heading = ({ text, fontSize }) => {
+export const Heading = ({ text, fontSize, fontWeight, lineHeight, color, textAlign, fontFamily }) => {
   const { connectors: { connect, drag }, isActive, actions: { setProp } } = useNode((node) => ({
     isActive: node.events.selected
   }));
@@ -11,7 +11,9 @@ export const Heading = ({ text, fontSize }) => {
     <h1
       ref={ref => connect(drag(ref))}
       className={`_heading${isActive ? "_active" : ""}`}
-      style={{ fontSize }, { width: "300px" }}
+      contentEditable={true}
+      suppressContentEditableWarning={true}
+      style={{ width: "auto", fontSize: `${fontSize}px`, fontWeight, lineHeight, color, textAlign, fontFamily }}
     >
       {text}
     </h1>
@@ -21,10 +23,16 @@ export const Heading = ({ text, fontSize }) => {
 
 Heading.craft = {
   props: {
-    text: "Hi",
-    fontSize: 20
+    text: "Heading",
+    fontSize: 20,
+    fontWeight: 500,
+    lineHeight: 1.2,
+    color: '#000',
+    textAlign: 'left',
+    fontFamily: 'Arial',
   },
+
   related: {
-    settings: Settings
+    settings: HeadingSettings
   }
 }

@@ -28,6 +28,11 @@ ListItem.craft = {
     width: "200px",
     height: "200px"
   },
+  rules: {
+    // Only accept Text
+    canMoveIn: (incomingNodes) => incomingNodes.every(incomingNode => incomingNode.data.type !== ListItem)
+    // canMoveIn: (incoming: Node[], self: Node, helper) => true,
+  },
   related: {
     settings: Settings
   }
