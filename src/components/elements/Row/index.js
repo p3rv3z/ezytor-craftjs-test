@@ -9,7 +9,7 @@ export const Row = ({children}) => {
     const { connectors: { connect, drag }, isActive, actions: { setProp } } = useNode((node) => ({
         isActive: node.events.selected
     }));
-    const { actions,currentJson } = useEditor((state) =>  ({
+    const { actions,query,currentJson } = useEditor((state) =>  ({
         currentJson: state.nodes
     }))
   
@@ -23,23 +23,9 @@ export const Row = ({children}) => {
 
     const addCol = () =>{
         console.log("calling addCol");
-        let newNode = {
-            "col-b": {
-                id: "col-b",
-                data: {
-                  type: Col,
-                  props: {},
-                  name: "Col",
-                  displayName: "colum",
-                  isCanvas: true
-                }
-              }
-        };
-        // actions.setOptions((options) => {
-        //     // console.log('options--------------------')
-        //     // console.log(options)
-        // });
-        actions.add({nodes: newNode});
+        const nodeTree = query.parseReactElement(<h2>Hi</h2>).toNodeTree();
+        // actions.addNodeTree(nodeTree);
+        actions.addNodeTree(nodeTree, 'ROOT');
     }
 
     return (
