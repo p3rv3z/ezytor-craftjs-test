@@ -37,7 +37,7 @@ export const LayoutSettings = () => {
                     <div className="_add_tab_section_drop_select">
                         <select name="display" onChange={handleChange} class="form-select" aria-label="Default select example">
                             <option value="block" selected={display == 'block'}>Block</option>
-                            <option value="grid" selected={display == 'block'}>Grid</option>
+                            <option value="grid" selected={display == 'grid'}>Grid</option>
                             <option value="inline-flex" selected={display == 'inline-flex'}>Inline-flex</option>
                             <option value="flex" selected={display == 'flex'}>Flex</option>
                             <option value="inline-block" selected={display == 'inline-block'}>Inline-block</option>

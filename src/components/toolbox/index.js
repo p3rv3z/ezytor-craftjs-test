@@ -2,7 +2,7 @@ import React from 'react';
 import { Element, useEditor } from "@craftjs/core";
 import { Heading } from '../elements/heading';
 import { Paragraph } from '../elements/paragraph';
-import { Container } from '../elements/container/Container';
+import { Container } from '../elements/container';
 import { Div } from '../elements/div';
 import { List } from '../elements/list';
 import { ListItem } from '../elements/listItem';

@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useEditor } from "@craftjs/core";
 
 export default function SettingsPanel() {
 
-    const { selected } = useEditor((state, query) => {
+    const { selected, actions } = useEditor((state, query) => {
         const currentNodeId = query.getEvent('selected').last();
         let selected;
 
@@ -11,12 +11,23 @@ export default function SettingsPanel() {
             selected = {
                 id: currentNodeId,
                 name: state.nodes[currentNodeId].data.name,
-                settings: state.nodes[currentNodeId].related && state.nodes[currentNodeId].related.settings
+                settings: state.nodes[currentNodeId].related && state.nodes[currentNodeId].related.settings,
+                isDeletable: query.node(currentNodeId).isDeletable()
             };
         }
 
         return { selected }
     });
+
+    const removeSelectedNode = (event) => {
+        if (event.key === "Delete") actions.delete(selected.id);
+    }
+
+    useEffect(() => {
+        document.addEventListener("keydown", removeSelectedNode);
+        return () => document.removeEventListener("keydown", removeSelectedNode);
+    }, [selected]);
+
 
     return (
 
