@@ -1,10 +1,10 @@
 import React from "react";
-import { TypographySettings } from "../../settings/TypographySettings";
+import { SizeSettings } from "../../settings/SizeSettings";
 import { SpacingSettings } from "../../settings/SpacingSettings";
-export const HeadingSettings = () => {
+export const DivSettings = () => {
     return (
         <>
-            <TypographySettings />
+            <SizeSettings />
             <SpacingSettings />
         </>
     )

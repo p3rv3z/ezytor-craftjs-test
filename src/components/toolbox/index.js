@@ -2,7 +2,7 @@ import React from 'react';
 import { Element, useEditor } from "@craftjs/core";
 import { Heading } from '../elements/heading';
 import { Paragraph } from '../elements/paragraph';
-import { Container } from '../elements/container/Container';
+import { Container } from '../elements/container';
 import { Div } from '../elements/div';
 import { List } from '../elements/list';
 import { ListItem } from '../elements/listItem';
@@ -155,7 +155,7 @@ function Toolbox() {
                                             <p className="_add_tab_icon_txt_para"  >Heading</p>
                                         </div>
                                     </div>
-                                    <div className="_add_tab_section_layout_inner" ref={ref => connectors.create(ref, <Paragraph text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged." />)}>
+                                    <div className="_add_tab_section_layout_inner" ref={ref => connectors.create(ref, <Paragraph />)}>
                                         <div className="_add_tab_icon">
                                             <svg data-icon="index" aria-hidden="true" focusable="false" width="59" height="16" viewBox="0 0 59 16" className="bem-Svg"><path opacity=".4" d="M0 0v16h29v-4h29V8h-1V4h2V0H0zm1 7h55H1zm57-4H1h57z"></path><path fill="#fff" d="M1 1v2h57V1H1zm55 4H1v2h55V5zM1 11h56V9H1v2zm0 4h27v-2H1v2z"></path></svg>
                                         </div>

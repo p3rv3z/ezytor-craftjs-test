@@ -14,12 +14,115 @@ export const News = ({children}) => {
     console.log("---------currentJson----------")
     console.log(currentJson)
 
+	const customElements = {
+		'div':{
+			type:testDiv,
+			name:'div',
+			displayName:'div'
+		},
+		'header':{
+			type:testHeader,
+			name:'header',
+			displayName:'header'
+		},
+		'nav':{
+			type:testNav,
+			name:'nav',
+			displayName:'nav'
+		},
+		'a':{
+			type:testA,
+			name:'a',
+			displayName:'a'
+		},
+		'img':{
+			type:testImg,
+			name:'img',
+			displayName:'img'
+		},
+		'button':{
+			type:testButton,
+			name:'button',
+			displayName:'button'
+		},
+		'span':{
+			type:testSpan,
+			name:'span',
+			displayName:'span'
+		},
+		'ul':{
+			type:testUl,
+			name:'ul',
+			displayName:'ul'
+		},
+		'li':{
+			type:testLi,
+			name:'li',
+			displayName:'li'
+		},
+		'h1':{
+			type:testH1,
+			name:'h1',
+			displayName:'h1'
+		},
+		'h2':{
+			type:testH2,
+			name:'h2',
+			displayName:'h2'
+		},
+		'h3':{
+			type:testH3,
+			name:'h3',
+			displayName:'h3'
+		},
+		'h4':{
+			type:testH4,
+			name:'h4',
+			displayName:'h4'
+		},
+		'h5':{
+			type:testH5,
+			name:'h5',
+			displayName:'h5'
+		},
+		'div':{
+			type:testDiv,
+			name:'div',
+			displayName:'div'
+		},
+		'p':{
+			type:testP,
+			name:'p',
+			displayName:'p'
+		},
+		'svg':{
+			type:testSvg,
+			name:'svg',
+			displayName:'svg'
+		},
+		'path':{
+			type:testPath,
+			name:'path',
+			displayName:'path'
+		},
+		'section':{
+			type:testSection,
+			name:'section',
+			displayName:'section'
+		},
+		'footer':{
+			type:testFooter,
+			name:'footer',
+			displayName:'footer'
+		},
+	}
+
     const addCol = () =>{
         console.log("calling addCol");
        
-        
+    
         // Create a new valid Node object from the fresh Node
-        const nodeTree = query.parseReactElement(  <div style={{background: '#262a34'}}>
+        const nodeTee = query.parseReactElement(  <div style={{background: '#262a34'}}>
 		<header className="_header_darefit_wrapper" id="header">
 			<nav className="navbar navbar-expand-lg navbar-dark _header_darefit_navbar">
 				<div className="container">
@@ -617,6 +720,25 @@ export const News = ({children}) => {
 		</footer>
         </div>).toNodeTree();
         // actions.addNodeTree(nodeTree);
+
+		console.log("node-tree")
+		console.log(nodeTree)
+		const keys = Object.keys(nodeTree.nodes)
+
+		for(let d of keys){
+			const node = nodeTree.nodes[d];
+			node.data.isCanvas = true
+			node.data.type = customElements[node.data.type].type
+			node.data.name = customElements[node.data.type].name
+			node.data.displayName = customElements[node.data.type].displayName
+
+			// node.rules.canDrag = true
+			// if(node.data.type == 'img'){
+			// 	node.data.isCanvas = false
+			// }
+		}
+		console.log("node---updated--tree")
+		console.log(nodeTree)
         actions.addNodeTree(nodeTree, 'ROOT');
         // actions.setOptions((options) => {
         //     // console.log('options--------------------')

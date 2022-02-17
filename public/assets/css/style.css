@@ -43,7 +43,7 @@ input {
 }
 /*---leftsidebar ----*/
 ._layout_left_sidebar_wrap {
-    height: calc(100vh - -2px);
+    height: calc(100vh - -1px);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -82,7 +82,7 @@ input {
     margin:0 0 16px;
 }
 .__panel_btn_link {
-    border-radius: 2px 0px 0px 2px;
+    border-radius: 1px 0px 0px 1px;
     padding: 0px 4px;
     font-size: 11px;
     outline: 0px;
@@ -183,7 +183,7 @@ input {
 
 /*---Rightsidebar ----*/
 ._layout_right_sidebar_wrap {
-    height: calc(100vh - -2px);
+    height: calc(100vh - -1px);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -233,9 +233,9 @@ input {
     display: inline;
     background: rgb(59, 121, 195);
     color: rgb(255, 255, 255);
-    border-radius: 2px;
+    border-radius: 1px;
     height: 24px;
-    margin: 2px;
+    margin: 1px;
     padding: 4px;
     vertical-align: top;
     width: 24px;
@@ -307,7 +307,7 @@ input {
     padding: 6px 10px;
     border-radius: 6px;
     border: none;
-    width: 50%;
+    width: 50px;
     height: 30px;
     font-size: 12px;
     font-weight: 500;
@@ -351,7 +351,7 @@ input {
 .btn-mat svg {
     width: 17px;
     height: 17px;
-    margin: -2px 3px 0 0;
+    margin: -1px 3px 0 0;
 }
 .btn.btn-mat.btn-default.upload_ad_image_content {
     display: flex;
@@ -407,29 +407,18 @@ input {
     -webkit-box-flex: 1;
     -ms-flex: 1 1;
     flex: 1 1;
-    padding: 8px 0 0;
-}
-._selected {
-    border: 2px dashed #555;
+    padding: 1px 0 0;
 }
 ._selected_active {
-    border:2px solid #6751e2;
+    border:1px solid #2700ff !important;
 }
-._section_active {
-    border: 2px dashed #555;
-    height: 50px;
-    width:100%;
+
+._dragging {
+    cursor: grabbing;
 }
-._container_active {
-    border: 2px dashed #555;
-    height: 70px;
-    margin-left: auto;
-    margin-right: auto;
-    min-width: 780px;
-}
-._active {
-    border: 2px dashed rgb(87, 0, 168);
-}
+
+/* Container */
+
 /* column css ---*/
 ._custom_row_center {
     width:100%;
@@ -438,7 +427,7 @@ input {
 }
 ._custom_col{
     /* background-color: rgba(255,10,10,.3); */
-    border: 1px dashed rgb(167 11 11);
+    outline: 1px dashed rgb(167 11 11);
     min-height: 40px;
 
 }
@@ -451,23 +440,23 @@ input {
 }
 /*-- div block css --*/
 ._div_block_active {
-    border: 2px dashed #555;
+    border: 1px dashed #555;
     height: 50px;
     width:100%;
 }
 /*-- div block css --*/
 
 /*---list ----*/
-._list_item{
-    outline: 2px dashed #555 !important;
+/* ._list_item{
+    outline: 1px dashed #555 !important;
     outline-offset: -1px !important;
     -webkit-box-shadow: inset 0 0 0 4px rgb(0 0 0 / 10%), inset 0 0 0 4px rgb(255 255 255 / 20%), inset 0 0 0 1px rgb(255 255 255 / 30%);
     box-shadow: inset 0 0 0 4px rgb(0 0 0 / 10%), inset 0 0 0 4px rgb(255 255 255 / 20%), inset 0 0 0 1px rgb(255 255 255 / 30%);
     height: 75px;
     min-width: 75px;
-}
+} */
 ._list_item2{
-    outline: 2px dashed #555 !important;
+    outline: 1px dashed #555 !important;
     outline-offset: -1px !important;
     -webkit-box-shadow: inset 0 0 0 4px rgb(0 0 0 / 10%), inset 0 0 0 4px rgb(255 255 255 / 20%), inset 0 0 0 1px rgb(255 255 255 / 30%);
     box-shadow: inset 0 0 0 4px rgb(0 0 0 / 10%), inset 0 0 0 4px rgb(255 255 255 / 20%), inset 0 0 0 1px rgb(255 255 255 / 30%);
@@ -475,7 +464,7 @@ input {
     min-width: 75px;
 }
 ._list_item3{
-    outline: 2px dashed #555 !important;
+    outline: 1px dashed #555 !important;
     outline-offset: -1px !important;
     -webkit-box-shadow: inset 0 0 0 4px rgb(0 0 0 / 10%), inset 0 0 0 4px rgb(255 255 255 / 20%), inset 0 0 0 1px rgb(255 255 255 / 30%);
     box-shadow: inset 0 0 0 4px rgb(0 0 0 / 10%), inset 0 0 0 4px rgb(255 255 255 / 20%), inset 0 0 0 1px rgb(255 255 255 / 30%);
@@ -489,7 +478,7 @@ input {
     list-style: none;
 }
 ._list_item1{
-    outline: 2px dashed #555 !important;
+    outline: 1px dashed #555 !important;
     outline-offset: -1px !important;
     -webkit-box-shadow: inset 0 0 0 4px rgb(0 0 0 / 10%), inset 0 0 0 4px rgb(255 255 255 / 20%), inset 0 0 0 1px rgb(255 255 255 / 30%);
     box-shadow: inset 0 0 0 4px rgb(0 0 0 / 10%), inset 0 0 0 4px rgb(255 255 255 / 20%), inset 0 0 0 1px rgb(255 255 255 / 30%);
@@ -660,3 +649,71 @@ input {
 ._column_area {
     background:gainsboro ;
 }
+
+/* common */
+ul {
+    margin: 0px;
+}
+._empty {
+    outline: 1px dashed #555 !important;
+    -webkit-box-shadow: inset 0 0 0 4px rgb(0 0 0 / 10%), inset 0 0 0 4px rgb(255 255 255 / 20%), inset 0 0 0 1px rgb(255 255 255 / 30%);
+    box-shadow: inset 0 0 0 4px rgb(0 0 0 / 10%), inset 0 0 0 4px rgb(255 255 255 / 20%), inset 0 0 0 1px rgb(255 255 255 / 30%);
+}
+
+._selected {
+    outline:1px solid #2700ff !important;
+}
+/* common */
+
+/* section */
+._section {
+    outline: 1px solid transparent;
+}
+
+._empty_section {
+    height: 75px !important;
+}
+/* section */
+
+/* container  */
+._container {
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 780px;
+    outline: 1px solid transparent;
+}
+/* container  */
+
+/* div  */
+._div{
+    outline: 1px solid transparent;
+}
+._empty_div {
+    height: 75px !important;
+}
+/* div  */
+
+/* heading  */
+._heading {
+    outline: 1px solid transparent;
+}
+/* heading  */
+
+/* div  */
+._list{
+    outline: 1px solid transparent;
+}
+._empty_list {
+    height: 75px !important;
+}
+/* div  */
+
+/* div  */
+._list_item{
+    outline: 1px solid transparent;
+}
+._empty_list_item {
+    height: 75px !important;
+}
+/* div  */

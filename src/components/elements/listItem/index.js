@@ -1,39 +1,55 @@
 import React, { Children } from "react";
 import { useNode } from "@craftjs/core";
-import { Settings } from "./Settings";
+import { ListItemSettings } from "./ListItemSettings";
+const classNames = require('classnames');
 
-export const ListItem = ({ children }) => {
-  const count = Children.count(children);
+export const ListItem = ({ children, styles }) => {
+    const count = Children.count(children);
 
-  const { connectors: { connect, drag }, isActive, actions: { setProp } } = useNode((node) => ({
-    isActive: node.events.selected
-  }));
+    const { connectors: { connect, drag }, isActive, isHovered } = useNode((node) => ({
+        isActive: node.events.selected,
+        isHovered: node.events.hovered,
+    }));
 
-  // const selectedClass = (count == 0 && !isActive) ? "_empty" : (isActive ? "_active" : "")
-  const selectedClass = ""
+    const classes = classNames('_list_item', { '_empty _empty_list_item': !count, '_selected': (isActive || isHovered) });
 
-  return (
-    <li 
-      ref={ref => connect(drag(ref))}
-      className={`_list_item${selectedClass}`}
-    >
-      {children}
-    </li>
-  )
+    return (
+        <li ref={ref => connect(drag(ref))}
+            className={classes}
+            style={styles}
+        >
+            {children}
+        </li>
+    )
 }
 
 
 ListItem.craft = {
-  props: {
-    width: "200px",
-    height: "200px"
-  },
-  rules: {
-    // Only accept Text
-    canMoveIn: (incomingNodes) => incomingNodes.every(incomingNode => incomingNode.data.type !== ListItem)
-    // canMoveIn: (incoming: Node[], self: Node, helper) => true,
-  },
-  related: {
-    settings: Settings
-  }
+    props: {
+        styles: {
+            width: "100%",
+            height: "auto",
+            minWidth: "auto",
+            maxWidth: "auto",
+            minHeight: "auto",
+            maxHeight: "auto",
+            objectFit: "cover",
+            marginTop: "auto",
+            marginBottom: "auto",
+            marginLeft: "auto",
+            marginRight: "auto",
+            paddingTop: "auto",
+            paddingBottom: "auto",
+            paddingLeft: "auto",
+            paddingRight: "auto",
+        }
+    },
+
+    related: {
+        settings: ListItemSettings
+    },
+
+    rules: {
+        canMoveIn: (incomingNodes) => incomingNodes.every(incomingNode => incomingNode.data.type !== ListItem)
+    }
 }

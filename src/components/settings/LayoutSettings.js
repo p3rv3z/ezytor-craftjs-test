@@ -22,14 +22,6 @@ export const LayoutSettings = () => {
                 <h4 className="_add_tab_section_header_title">Layout</h4>
             </div>
             <div className="_add_tab_section_size">
-                {/* <div className="_add_tab_section_size_info">
-                    <div className="_add_tab_section_size_info_txt">
-                        <h4 className="_add_tab_section_drop_title">Font:</h4>
-                    </div>
-                    <input type="text" name="fontFamily" value={fontFamily} autocomplete="off" autocorrect="off" autocaptialize="off" spellcheck="false" data-automation-id="css-token-input" placeholder="Arial"
-                        onChange={handleChange}></input>
-                </div> */}
-
                 <div className="_add_tab_section_size_info">
                     <div className="_add_tab_section_size_info_txt">
                         <h4 className="_add_tab_section_drop_title">Display:</h4>
@@ -37,7 +29,7 @@ export const LayoutSettings = () => {
                     <div className="_add_tab_section_drop_select">
                         <select name="display" onChange={handleChange} className="form-select" aria-label="Default select example">
                             <option value="block" selected={display == 'block'}>Block</option>
-                            <option value="grid" selected={display == 'block'}>Grid</option>
+                            <option value="grid" selected={display == 'grid'}>Grid</option>
                             <option value="inline-flex" selected={display == 'inline-flex'}>Inline-flex</option>
                             <option value="flex" selected={display == 'flex'}>Flex</option>
                             <option value="inline-block" selected={display == 'inline-block'}>Inline-block</option>
