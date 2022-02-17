@@ -4,7 +4,7 @@ function Middle() {
     return(
         <section className="_middle_wrapper">
             <div className="_layout_middle_inner">
-            <p class="_plus" onClick={addCol} >+</p>
+            <p className="_plus" onClick={addCol} >+</p>
 
                     {/* <div className="_section_active _selected_active"></div> */}
                     {/* <div className="_container_active"></div> */}

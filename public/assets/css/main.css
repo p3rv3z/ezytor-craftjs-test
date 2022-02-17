@@ -1,0 +1,2108 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    padding: 0px;
+    margin: 0 auto;
+    font-weight: 400;
+}
+body {
+    margin: 0px auto;
+    padding: 0px;
+    background-color: var(--bg2);
+}
+p {
+    margin: 0px;
+}
+h1,h2,h3,h4, h5,h6{
+    margin: 0px;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+button:focus, input:focus, select:focus, textarea:focus{
+    outline: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible{
+    outline: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+.navbar-toggler:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+img{
+    width:100%;
+    display:block;
+    height: auto;
+}
+a{
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+    color: transparent;
+}
+a, button{
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+}
+/*header darefit section*/
+._header_darefit_wrapper {
+    padding: 25px 0 80px;
+}
+._header_logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+._logo_img {
+    max-width: 140px;
+}
+._header_darefit_nav_li {
+    margin: 0 42px 0 0;
+}
+._header_darefit_nav_li:last-child {
+    margin: 0;
+}
+._header_darefit_nav_item {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color2);
+    display: inline-block;
+    transition: .2s all ease;
+}
+._header_darefit_nav_item:hover, ._active_item{
+    color: var(--color1);
+}
+._header_darefit_nav_r8_ul {
+    margin-left: auto;
+}
+._header_darefit_nav_r8_li {
+    display: flex;
+    align-items: center;
+}
+._login {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30px 0 0;
+    transition: .2s all ease;
+}
+._login:hover {
+    color: var(--color3) !important;
+}
+._signup {
+    background: var(--color3);
+    border-radius: 6px;
+    border: 1px solid transparent;
+    padding: 16px 22px;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s all ease;
+    width: 106px;
+    height: 50px;
+}
+._signup:hover {
+    border-color: var(--color3) !important;
+    background: transparent;
+    color: var(--color3) !important;
+}
+._header_darefit_cont_wrap {
+    padding: 78px 0 0;
+}
+._header_darefit_cont_t {
+    font-family: Gelasio;
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color1);
+    margin: 0 auto 26px;
+    max-width: 73%;
+}
+._header_darefit_cont_p_wrapper {
+    position: relative;
+}
+._header_darefit_cont_p {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.4;
+    text-align: center;
+    color: var(--color4);
+    margin: 0 auto 52px;
+    max-width: 42%;
+}
+._header_darefit_cont_ic1 {
+    background: var(--color5);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 58px;
+    position: absolute;
+    left: 0;
+    top: 33px;
+}
+._header_darefit_cont_ic2 {
+    background: var(--bg3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 58px;
+    position: absolute;
+    left: 100px;
+    top: 70px;
+}
+._header_darefit_cont_ic3 {
+    background: var(--bg3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 58px;
+    position: absolute;
+    right: 0;
+    top: 33px;
+}
+._header_darefit_cont_ic4 {
+    background: var(--color5);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 58px;
+    position: absolute;
+    right: 100px;
+    top: 70px;
+}
+._header_darefit_cont_ic {
+    max-width: 30px;
+}
+._header_darefit_cont_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+._header_darefit_cont_btn1 {
+    background: var(--color3);
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 21px 36px;
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s all ease;
+    width: 194px;
+    height: 64px;
+}
+._header_darefit_cont_btn1:hover {
+    border-color: var(--color3) !important;
+    background: transparent;
+    color: var(--color3) !important;
+}
+._header_darefit_bottom_wrap {
+    margin: 54px 0 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+._header_darefit_bottom_img {
+    position: relative;
+    margin: 50px 0 0;
+}
+._header_darefit_bottom_img:before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/header-rectangle.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 420px;
+    height: 378px;
+    z-index: -1;
+    top: 120px;
+    left: -24px;
+}
+._header_darefit_bottom_img_t {
+    max-width: 354px;
+    margin: 0 auto;
+}
+._header_darefit_bottom_play_ic {
+    border: 0;
+    background: var(--color1);
+    border-radius: 14px;
+    width: 94px;
+    height: 94px;
+    position: absolute;
+    bottom: 56px;
+    right: -79px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s all ease;
+}
+._header_darefit_bottom_play_ic svg {
+    margin: 0 0 0 10px;
+}
+._header_darefit_bottom_left_cont {
+    position: relative;
+    z-index: 10;
+    margin: 22px 0 0;
+}
+._header_darefit_bottom_left_cont:before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/header-bottom-rectangle1.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 170px;
+    height: 164px;
+    z-index: -1;
+    top: 33px;
+    left: 6px;
+}
+._header_darefit_bottom_left_cont_t {
+    font-family: Gelasio;
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 1.4;
+    color: var(--color1);
+    margin: 0 0 15px;
+    text-align: center;
+}
+._header_darefit_bottom_left_cont_p {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 1.2;
+    color: var(--color1);
+    margin: 0 auto;
+    max-width: 99%;
+    text-align: center;
+}
+._header_darefit_bottom_r8_cont1 {
+    position: relative;
+    z-index: 10;
+}
+._header_darefit_bottom_r8_cont1:before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/header-bottom-rectangle2.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 132px;
+    height: 128px;
+    z-index: -1;
+    top: 11px;
+    left: -3px;
+}
+._header_darefit_bottom_r8_cont1_t {
+    font-family: Gelasio;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 1.4;
+    color: var(--color1);
+    margin: 0 0 15px;
+    text-align: left;
+}
+._header_darefit_bottom_r8_cont1_p {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--color1);
+    margin: 0 auto;
+    max-width: 99%;
+    text-align: left;
+}
+/* responsive css */
+/* Desktop/Laptop */
+@media only screen and (min-width: 1600px) {}
+@media (max-width: 1399px) {
+    ._header_darefit_nav_item {
+        font-size: 15px;
+    }
+    ._header_darefit_nav_li {
+        margin: 0 38px 0 0;
+    }
+    ._header_darefit_cont_t {
+        font-size: 78px;
+        max-width: 73%;
+    }
+    ._header_darefit_cont_p {
+        font-size: 17px;
+        max-width: 46%;
+    }
+    ._header_darefit_cont_btn1 {
+        font-size: 16px;
+        width: 185px;
+        height: auto;
+    }
+}
+/* Desktop/Laptop */
+@media only screen and (max-width: 1199px) { 
+    ._header_darefit_nav_item {
+        font-size: 14px;
+    }
+    ._header_darefit_nav_li {
+        margin: 0 30px 0 0;
+    }
+    ._login {
+        font-size: 15px;
+    }
+    ._signup {
+        padding: 15px 18px;
+        font-size: 15px;
+        width: 102px;
+        height: auto;
+    }
+    ._header_darefit_cont_t {
+        font-size: 70px;
+        max-width: 78%;
+    }
+    ._header_darefit_cont_p {
+        font-size: 16px;
+        max-width: 60%;
+    }
+    ._header_darefit_bottom_left_cont_t {
+        font-size: 80px;
+    }
+    ._header_darefit_bottom_left_cont:before {
+        top: 14px;
+        left: 0;
+    }
+    ._header_darefit_bottom_left_cont_p {
+        font-size: 23px;
+        max-width: 96%;
+    }
+    ._header_darefit_bottom_r8_cont1_t {
+        font-size: 48px;
+    }
+    ._header_darefit_bottom_r8_cont1_p {
+        font-size: 18px;
+    }
+    ._header_darefit_bottom_r8_cont1:before {
+        top: -9px;
+        left: -7px;
+    }
+}
+/* Ipad pro */
+@media only screen and (max-width: 991px) {
+    ._header_darefit_nav_li {
+        margin: 0 0 10px 0;
+        text-align: center;
+    }
+    ._header_darefit_nav_r8_li {
+        justify-content: center;
+    }
+    ._login {
+        font-size: 14px;
+        margin: 12px 0 12px;
+    }
+    ._signup {
+        padding: 14px 15px;
+        font-size: 14px;
+        width: 98px;
+    }
+    ._header_darefit_cont_t {
+        font-size: 53px;
+        max-width: 79%;
+    }
+    ._header_darefit_cont_p {
+        font-size: 15px;
+        max-width: 76%;
+    }
+    ._header_darefit_cont_btn1 {
+        font-size: 15px;
+        width: 170px;
+    }
+    ._header_darefit_bottom_left_cont_t {
+        font-size: 60px;
+    }
+    ._header_darefit_bottom_left_cont_p {
+        font-size: 21px;
+        max-width: 98%;
+    }
+    ._header_darefit_bottom_left_cont:before {
+        top: -16px;
+        left: -1px;
+    }
+    ._header_darefit_bottom_r8_cont1_t {
+        font-size: 40px;
+    }
+    ._header_darefit_bottom_r8_cont1:before {
+        top: -19px;
+        left: -4px;
+    }
+}
+/* Ipad/Mobile L */
+@media only screen and (max-width: 767px) {
+    ._header_darefit_cont_ic1, ._header_darefit_cont_ic2, ._header_darefit_cont_ic3, ._header_darefit_cont_ic4 {
+        display: none;
+    }
+    ._header_darefit_cont_wrap {
+        padding: 50px 0 0;
+    }
+    ._header_darefit_cont_t {
+        font-size: 40px;
+        max-width: 82%;
+    }
+    ._header_darefit_cont_p {
+        font-size: 14px;
+        max-width: 90%;
+    }
+    ._header_darefit_cont_btn1 {
+        font-size: 14px;
+        width: 150px;
+        padding: 19px 10px;
+    }
+    ._header_darefit_bottom_img:before {
+        top: 120px;
+        left: -34px;
+    }
+    ._header_darefit_bottom_r8_cont1:before {
+        top: -19px;
+        left: -54px;
+    }
+    ._header_darefit_bottom_wrap {
+        margin: 70px 0 0;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    ._header_darefit_bottom_left_cont:before {
+        top: -18px;
+        left: -21px;
+    }
+    ._header_darefit_bottom_left_cont_p {
+        font-size: 20px;
+        max-width: 99%;
+        margin: 0;
+    }
+    ._header_darefit_bottom_img {
+        margin: 70px 0 0;
+    }
+    ._header_darefit_bottom_r8_cont1 {
+        margin: 70px 0 0;
+    }
+    ._header_darefit_bottom_r8_cont1:before {
+        top: -18px;
+        left: -24px;
+    }
+}
+/* Mobile */
+@media only screen and (max-width: 575px) {
+    ._header_darefit_cont_t {
+        font-size: 30px;
+        max-width: 82%;
+    }
+    ._header_darefit_cont_p {
+        font-size: 13px;
+        max-width: 82%;
+    }
+    ._header_darefit_bottom_left_cont:before {
+        left: -27px;
+    }
+}
+@media only screen and (max-width: 420px) {
+    ._header_darefit_bottom_img:before {
+        top: 179px;
+        left: -1px;
+        width: 100%;
+    }
+    ._header_darefit_bottom_play_ic {
+        width: 80px;
+        height: 80px;
+        bottom: 0;
+        right: 0;
+    }
+    ._header_darefit_bottom_left_cont_t {
+        font-size: 52px;
+    }
+    ._header_darefit_bottom_r8_cont1_t {
+        font-size: 35px;
+    }
+    ._header_darefit_bottom_r8_cont1:before {
+        top: -24px;
+    }
+    ._header_darefit_cont_btn1 {
+        font-size: 13px;
+        width: 135px;
+        padding: 17px 0;
+    }
+}
+@media only screen and (max-width: 375px) {
+    ._header_darefit_cont_wrap {
+        padding: 38px 0 0;
+    }
+    ._header_darefit_cont_t {
+        font-size: 28px;
+        max-width: 84%;
+    }
+    ._header_darefit_cont_p {
+        font-size: 12px;
+        max-width: 100%;
+    }
+    ._header_darefit_bottom_left_cont:before {
+        top: -31px;
+    }
+    ._header_darefit_bottom_img:before {
+        top: 176px;
+    }
+}
+@media only screen and (max-width: 320px) {
+    ._header_darefit_bottom_img:before {
+        top: 149px;
+    }
+}
+/*header darefit section end*/
+/*about us darefit section*/
+._about_us_darefit_wrapper {
+    padding: 80px 0;
+}
+._about_us_darefit_left_img1 {
+    position: relative;
+    max-width: 364px;
+    margin: 0 auto;
+}
+._about_us_darefit_left_btn {
+    border: 0;
+    background: rgba(223, 32, 32, 0.5);
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 110px;
+    left: 160px;
+}
+._about_us_darefit_left_img2 {
+    position: relative;
+    max-width: 363px;
+    margin: -100px 0 0 0;
+}
+._about_us_darefit_left_btn1 {
+    border: 0;
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 108px;
+    left: 159px;
+}
+._about_us_darefit_r8_t {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    color: var(--color1);
+    margin: 0 0 12px;
+    position: relative;
+    z-index: 10;
+}
+._about_us_darefit_r8_t:before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/about-rectangle.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 59px;
+    height: 53px;
+    z-index: -1;
+    top: -30px;
+    left: -4px;
+}
+._about_us_darefit_r8_t1 {
+    font-family: Gelasio;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.2;
+    color: var(--color1);
+    margin: 0 0 22px;
+    max-width: 87%;
+}
+._about_us_darefit_r8_p {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.4;
+    color: var(--color4);
+    margin: 0 0 55px;
+    max-width: 83%;
+}
+._about_us_darefit_r8_btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+._about_us_darefit_r8_btn1 {
+    background: var(--color3);
+    border-radius: 4px;
+    border: 1px solid transparent;
+    padding: 20px 38px;
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s all ease;
+    width: 172px;
+    height: 60px;
+}
+._about_us_darefit_r8_btn1:hover {
+    border-color: var(--color3) !important;
+    background: transparent;
+    color: var(--color3) !important;
+}
+/* responsive css */
+/* Desktop/Laptop */
+@media only screen and (min-width: 1600px) {}
+@media (max-width: 1399px) {
+    ._about_us_darefit_r8_t1 {
+        font-size: 36px;
+    }
+    ._about_us_darefit_r8_p {
+        font-size: 17px;
+        max-width: 91%;
+    }
+    ._about_us_darefit_r8_btn1 {
+        font-size: 15px;
+        width: 160px;
+        height: auto;
+        padding: 20px 10px;
+    }
+    ._about_us_darefit_r8_t {
+        font-size: 16px;
+    }
+}
+/* Desktop/Laptop */
+@media only screen and (max-width: 1199px) { 
+    ._about_us_darefit_r8_t1 {
+        font-size: 32px;
+    }
+    ._about_us_darefit_r8_btn1 {
+        font-size: 14px;
+        width: 145px;
+        padding: 20px;
+    }
+    ._about_us_darefit_r8_t1 {
+        font-size: 30px;
+        max-width: 91%;
+    }
+    ._about_us_darefit_r8_p {
+        font-size: 16px;
+        max-width: 100%;
+    }
+}
+/* Ipad pro */
+@media only screen and (max-width: 991px) {
+    ._about_us_darefit_r8_t1 {
+        font-size: 30px;
+    }
+    ._about_us_darefit_r8_btn1 {
+        font-size: 13px;
+        width: 130px;
+        padding: 17px;
+    }
+    ._about_us_darefit_r8 {
+        margin: 70px 0 0;
+    }
+    ._about_us_darefit_r8_btn {
+        justify-content: center;
+    }
+    ._about_us_darefit_r8_t:before {
+        top: -30px;
+        left: 44%;
+    }
+    ._about_us_darefit_r8_t {
+        font-size: 15px;
+        text-align: center;
+    }
+    ._about_us_darefit_r8_t1 {
+        font-size: 28px;
+        text-align: center;
+        margin: 0 auto 22px;
+    }
+    ._about_us_darefit_r8_p {
+        font-size: 15px;
+        text-align: center;
+    }
+    ._about_us_darefit_left_img1 {
+        margin: 0;
+        margin-left: auto;
+    }
+}
+/* Ipad/Mobile L */
+@media only screen and (max-width: 767px) {
+    ._about_us_darefit_r8_t1 {
+        font-size: 26px;
+        max-width: 100%;
+    }
+    ._about_us_darefit_r8_p {
+        font-size: 14px;
+    }
+}
+/* Mobile */
+@media only screen and (max-width: 575px) {
+    ._about_us_darefit_r8_t {
+        font-size: 14px;
+    }
+    ._about_us_darefit_r8_t1 {
+        font-size: 23px;
+    }
+}
+@media only screen and (max-width: 420px) {
+    ._about_us_darefit_r8_t1 {
+        font-size: 22px;
+    }
+    ._about_us_darefit_left_img2 {
+        position: relative;
+        max-width: 363px;
+        margin: -60px 0 0 0;
+    }
+}
+@media only screen and (max-width: 375px) {
+    ._about_us_darefit_r8_t1 {
+        font-size: 21px;
+    }
+    ._about_us_darefit_r8_btn1 {
+        font-size: 12px;
+        width: 120px;
+        padding: 16px;
+    }
+    ._about_us_darefit_left_img2 {
+        margin: 30px 0 0;
+    }
+    ._about_us_darefit_left_btn {
+        top: 41%;
+        left: 43%;
+    }
+    ._about_us_darefit_left_btn1 {
+        top: 47%;
+        left: 44%;
+    }
+}
+/*about us darefit section end*/
+/*feature darefit section*/
+._feature_darefit_wrapper {
+    padding: 100px 0;
+}
+._feature_darefit_cont_t {
+    font-family: Gelasio;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color1);
+    margin: 0 0 22px;
+}
+._feature_darefit_cont_p {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    color: var(--color4);
+    margin: 0 auto 70px;
+    max-width: 42%;
+}
+._feature_darefit_card {
+    position: relative;
+    overflow: hidden;
+    margin: 20px 0;
+}
+._feature_darefit_card_img {
+    transform: scale(1);
+    transition: .2s all ease;
+}
+._feature_darefit_card_img:hover{
+    transform: scale(1.2);
+}
+._feature_darefit_card_img1 {
+    max-width: 100%;
+}
+._feature_darefit_card_cont {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding: 13px 24px 13px 24px;
+}
+._feature_darefit_card_cont_t {
+    font-family: Gelasio;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+    color: var(--color1);
+    margin: 0 0 8px;
+}
+._feature_darefit_card_cont_p {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--color1);
+    margin: 0;
+}
+._feature_darefit_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 55px 0 0;
+}
+._feature_darefit_btn1 {
+    background: var(--color3);
+    border-radius: 4px;
+    border: 1px solid transparent;
+    padding: 20px 38px;
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s all ease;
+    width: 172px;
+    height: 60px;
+}
+._feature_darefit_btn1:hover {
+    border-color: var(--color3) !important;
+    background: transparent;
+    color: var(--color3) !important;
+}
+/* responsive css */
+/* Desktop/Laptop */
+@media only screen and (min-width: 1600px) {}
+@media (max-width: 1399px) {
+    ._feature_darefit_cont_t {
+        font-size: 36px;
+    }
+    ._feature_darefit_cont_p {
+        font-size: 17px;
+        max-width: 46%;
+    }
+    ._feature_darefit_card_cont_t {
+        font-size: 22px;
+    }
+    ._feature_darefit_card_cont_p {
+        font-size: 15px;
+    }
+    ._feature_darefit_btn1 {
+        font-size: 15px;
+        width: 160px;
+        height: auto;
+    }
+}
+/* Desktop/Laptop */
+@media only screen and (max-width: 1199px) { 
+    ._feature_darefit_cont_t {
+        font-size: 32px;
+    }
+    ._feature_darefit_cont_p {
+        font-size: 16px;
+        max-width: 52%;
+    }
+    ._feature_darefit_card_cont_t {
+        font-size: 20px;
+    }
+    ._feature_darefit_card_cont_p {
+        font-size: 13px;
+    }
+    ._feature_darefit_btn1 {
+        font-size: 14px;
+        width: 145px;
+        padding: 20px;
+    }
+}
+/* Ipad pro */
+@media only screen and (max-width: 991px) {
+    ._feature_darefit_wrapper {
+        padding: 80px 0;
+    }
+    ._feature_darefit_cont_t {
+        font-size: 30px;
+    }
+    ._feature_darefit_cont_p {
+        font-size: 15px;
+        max-width: 65%;
+        margin: 0 auto 40px;
+    }
+    ._feature_darefit_card_cont_t {
+        font-size: 18px;
+        text-align: center;
+    }
+    ._feature_darefit_card_cont_p {
+        text-align: center;
+    }
+    ._feature_darefit_btn1 {
+        font-size: 13px;
+        width: 130px;
+        padding: 17px;
+    }
+}
+/* Ipad/Mobile L */
+@media only screen and (max-width: 767px) {
+    ._feature_darefit_wrapper {
+        padding: 65px 0;
+    }
+    ._feature_darefit_cont_t {
+        font-size: 27px;
+    }
+    ._feature_darefit_cont_p {
+        font-size: 14px;
+        max-width: 82%;
+        margin: 0 auto 20px;
+    }
+    ._feature_darefit_card_cont_t {
+        font-size: 17px;
+    }
+}
+/* Mobile */
+@media only screen and (max-width: 575px) {
+    ._feature_darefit_cont_t {
+        font-size: 25px;
+    }
+    ._feature_darefit_cont_p {
+        font-size: 13px;
+    }
+    ._feature_darefit_btn {
+        margin: 35px 0 0;
+    }
+}
+@media only screen and (max-width: 420px) {
+    ._feature_darefit_cont_t {
+        font-size: 23px;
+    }
+    ._feature_darefit_cont_p {
+        font-size: 12px;
+        max-width: 100%;
+    }
+}
+@media only screen and (max-width: 375px) {
+    ._feature_darefit_cont_t {
+        font-size: 22px;
+    }
+    ._feature_darefit_wrapper {
+        padding: 50px 0;
+    }
+    ._feature_darefit_btn1 {
+        font-size: 12px;
+        width: 120px;
+        padding: 16px;
+    }
+}
+/*feature darefit section end*/
+/*pricing darefit section*/
+._pricing_darefit_wrapper {
+    padding: 90px 0;
+}
+._pricing_darefit_cont_t {
+    font-family: Gelasio;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color1);
+    margin: 0 0 22px;
+}
+._pricing_darefit_cont_p {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    color: var(--color4);
+    margin: 0 auto 70px;
+    max-width: 42%;
+}
+._pricing_darefit_card {
+    background: var(--bg4);
+    border-radius: 6px;
+    margin: 20px 0;
+}
+._pricing_darefit_card_price {
+    padding: 53px 0 20px;
+}
+._pricing_darefit_card_price_t {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color6);
+    margin: 0 0 29px;
+}
+._pricing_darefit_card_price_t1 {
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 1.4;
+    color: var(--color1);
+    text-align: center;
+    margin: 0 0 20px;
+}
+._pricing_darefit_card_price_t1 svg {
+    margin: 0 0 45px;
+}
+._pricing_darefit_card_feature {
+    border-top: 4px solid var(--bg2);
+    padding: 28px 0 30px;
+    min-height: 290px;
+}
+._pricing_darefit_card_feature_li {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    text-align: center;
+    color: var(--color6);
+    margin: 0 0 18px;
+}
+._pricing_darefit_card_feature_li:last-child {
+    margin: 0;
+}
+._pricing_darefit_card_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0 50px;
+}
+._pricing_darefit_card_btn1 {
+    background: transparent;
+    border: 1px solid var(--color3);
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 15px 42px;
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s all ease;
+    width: 178px;
+    height: 49px;
+}
+._pricing_darefit_card_btn1:hover {
+    border-color: transparent;
+    background: var(--color3);
+    color: var(--color1);
+}
+/* responsive css */
+/* Desktop/Laptop */
+@media only screen and (min-width: 1600px) {}
+@media (max-width: 1399px) {
+    ._pricing_darefit_wrapper {
+        padding: 80px 0;
+    }
+    ._pricing_darefit_cont_t {
+        font-size: 36px;
+    }
+    ._pricing_darefit_cont_p {
+        font-size: 17px;
+        max-width: 46%;
+    }
+    ._pricing_darefit_card_price_t {
+        font-size: 22px;
+    }
+    ._pricing_darefit_card_price_t1 {
+        font-size: 48px;
+    }
+    ._pricing_darefit_card_feature_li {
+        font-size: 15px;
+    }
+    ._pricing_darefit_card_btn1 {
+        font-size: 15px;
+        width: 160px;
+        height: auto;
+    }
+}
+/* Desktop/Laptop */
+@media only screen and (max-width: 1199px) { 
+    ._pricing_darefit_wrapper {
+        padding: 60px 0;
+    }
+    ._pricing_darefit_cont_t {
+        font-size: 32px;
+    }
+    ._pricing_darefit_cont_p {
+        font-size: 16px;
+        max-width: 52%;
+    }
+    ._pricing_darefit_card_price_t {
+        font-size: 20px;
+    }
+    ._pricing_darefit_card_price_t1 {
+        font-size: 40px;
+    }
+    ._pricing_darefit_card_feature_li {
+        font-size: 14px;
+    }
+    ._pricing_darefit_card_btn {
+        padding: 6px 0 40px;
+    }
+    ._pricing_darefit_card_price {
+        padding: 40px 0 15px;
+    }
+}
+/* Ipad pro */
+@media only screen and (max-width: 991px) {
+    ._pricing_darefit_cont_t {
+        font-size: 30px;
+    }
+    ._pricing_darefit_cont_p {
+        font-size: 15px;
+        max-width: 65%;
+        margin: 0 auto 40px;
+    }
+    ._pricing_darefit_btn1 {
+        font-size: 13px;
+        width: 130px;
+        padding: 17px;
+    }
+    ._pricing_darefit_card_price_t {
+        font-size: 18px;
+    }
+    ._pricing_darefit_card_price_t1 {
+        font-size: 37px;
+    }
+    ._pricing_darefit_card_feature_li {
+        font-size: 13px;
+    }
+}
+/* Ipad/Mobile L */
+@media only screen and (max-width: 767px) {
+    ._pricing_darefit_cont_t {
+        font-size: 27px;
+    }
+    ._pricing_darefit_cont_p {
+        font-size: 14px;
+        max-width: 82%;
+        margin: 0 auto 20px;
+    }
+    ._pricing_darefit_card_price_t {
+        font-size: 17px;
+    }
+    ._pricing_darefit_card_price_t1 {
+        font-size: 35px;
+        margin: 0 0 5px;
+    }
+    ._pricing_darefit_card_btn {
+        padding: 4px 0 30px;
+    }
+    ._pricing_darefit_card_price {
+        padding: 34px 0 10px;
+    }
+}
+/* Mobile */
+@media only screen and (max-width: 575px) {
+    ._pricing_darefit_cont_t {
+        font-size: 25px;
+    }
+    ._pricing_darefit_cont_P {
+        font-size: 13px;
+    }
+    ._pricing_darefit_card_price_t1 {
+        font-size: 32px;
+    }
+}
+@media only screen and (max-width: 420px) {
+    ._pricing_darefit_wrapper {
+        padding: 40px 0;
+    }
+    ._pricing_darefit_cont_t {
+        font-size: 23px;
+    }
+    ._pricing_darefit_cont_p {
+        font-size: 13px;
+        max-width: 100%;
+    }
+}
+@media only screen and (max-width: 375px) {
+    ._prising_darefit_cont_t {
+        font-size: 22px;
+    }
+    ._pricing_darefit_btn1 {
+        font-size: 12px;
+        width: 120px;
+        padding: 16px;
+    }
+}
+/*pricing darefit section end*/
+/*testimonial darefit section*/
+._testimonial_darefit_wrapper {
+    padding: 100px 0;
+}
+._testimonial_darefit_cont_t {
+    font-family: Gelasio;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color1);
+    margin: 0 0 22px;
+}
+._testimonial_darefit_cont_p {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    color: var(--color4);
+    margin: 0 auto 70px;
+    max-width: 42%;
+}
+._testimonial_darefit_card_p_wrap {
+    background: var(--bg4);
+    border-radius: 6px;
+    padding: 23px 50px 33px 38px;
+    margin: 0 0 40px;
+    position: relative;
+}
+._testimonial_darefit_card_p_span1 {
+    position: absolute;
+    top: 13px;
+    left: 8px;
+}
+._testimonial_darefit_card_p_span2 {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+}
+._testimonial_darefit_card_p {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color6);
+    max-width: 92%;
+}
+._testimonial_darefit_card_info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+._testimonial_darefit_card_img {
+    margin: 0 17px 0 0;
+}
+._testimonial_darefit_card_img1 {
+    max-width: 96px;
+}
+._testimonial_darefit_card_img_cont_t {
+    font-family: Gelasio;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    color: var(--color1);
+    margin: 0 0 3px;
+}
+._testimonial_darefit_card_img_cont_p {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    color: var(--color4);
+    margin: 0;
+}
+._testimonial_darefit_bullet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 55px 0 0;
+}
+._bullet_btn {
+    border: 2px solid var(--color7);
+    box-sizing: border-box;
+    border-radius: 1px;
+    width: 22px;
+    height: 6px;
+    margin: 0 12px 0 0;
+    background: transparent;
+}
+.glide__bullet--active {
+    background: var(--color3) !important;
+    border-color: transparent;
+}
+/* responsive css */
+/* Desktop/Laptop */
+@media only screen and (min-width: 1600px) {}
+@media (max-width: 1399px) {
+    ._testimonial_darefit_cont_t {
+        font-size: 36px;
+    }
+    ._testimonial_darefit_cont_p {
+        font-size: 17px;
+        max-width: 46%;
+    }
+}
+/* Desktop/Laptop */
+@media only screen and (max-width: 1199px) { 
+    ._testimonial_darefit_wrapper {
+        padding: 80px 0;
+    }
+    ._testimonial_darefit_cont_t {
+        font-size: 32px;
+    }
+    ._testimonial_darefit_cont_p {
+        font-size: 16px;
+        max-width: 52%;
+    }
+    ._testimonial_darefit_card_p {
+        font-size: 15px;
+        max-width: 100%;
+    }
+    ._testimonial_darefit_card_img_cont_t {
+        font-size: 19px;
+    }
+}
+/* Ipad pro */
+@media only screen and (max-width: 991px) {
+    ._testimonial_darefit_cont_t {
+        font-size: 30px;
+    }
+    ._testimonial_darefit_cont_p {
+        font-size: 15px;
+        max-width: 80%;
+        margin: 0 auto 40px;
+    }
+    ._testimonial_darefit_card_p {
+        font-size: 12px;
+    }
+    ._testimonial_darefit_card_img_cont_t {
+        font-size: 17px;
+    }
+    ._testimonial_darefit_card_info {
+        justify-content: center;
+    }
+}
+/* Ipad/Mobile L */
+@media only screen and (max-width: 767px) {
+    ._testimonial_darefit_wrapper {
+        padding: 60px 0;
+    }
+    ._testimonial_darefit_cont_t {
+        font-size: 27px;
+    }
+    ._testimonial_darefit_cont_p {
+        font-size: 14px;
+        max-width: 82%;
+        margin: 0 auto 20px;
+    }
+}
+/* Mobile */
+@media only screen and (max-width: 575px) {
+    ._testimonial_darefit_wrapper {
+        padding: 30px 0 50px;
+    }
+    ._testimonial_darefit_cont_t {
+        font-size: 25px;
+    }
+    ._testimonial_darefit_cont_p {
+        font-size: 13px;
+    }
+    ._testimonial_darefit_card_p_wrap {
+        margin: 0 0 40px 20px;
+    }    
+}
+@media only screen and (max-width: 420px) {
+    ._testimonial_darefit_cont_t {
+        font-size: 23px;
+    }
+    ._testimonial_darefit_cont_p {
+        font-size: 13px;
+        max-width: 100%;
+    }
+    ._testimonial_darefit_card_p_wrap {
+        padding: 23px 23px 33px 32px;
+    }
+    ._testimonial_darefit_card_img_cont_t {
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 375px) {
+    ._testimonial_darefit_cont_t {
+        font-size: 22px;
+    }
+}
+/*testimonial darefit section end*/
+/*blog darefit section*/
+._blog_darefit_wrapper {
+    padding: 90px 0;
+}
+._blog_darefit_cont_t {
+    font-family: Gelasio;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color1);
+    margin: 0 0 22px;
+}
+._blog_darefit_cont_p {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    color: var(--color4);
+    margin: 0 auto 70px;
+    max-width: 42%;
+}
+._blog_darefit_card {
+    background: var(--bg4);
+    border: 1px solid var(--color8);
+    box-sizing: border-box;
+    border-radius: 14px;
+    margin: 20px 0;
+    transition: .2s all ease;
+}
+._blog_darefit_card:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+._blog_darefit_card_img {
+    position: relative;
+}
+._blog_darefit_card_img1 {
+    max-width: 100%;
+}
+._blog_darefit_card_date {
+    position: absolute;
+    bottom: 23px;
+    left: 30px;
+}
+._blog_darefit_card_cont {
+    padding: 14px 31px 14px;
+}
+._blog_darefit_card_cont_p {
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--color1);
+    margin: 0 0 12px;
+    max-width: 75%;
+}
+._blog_darefit_card_cont_b {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    color: var(--color3);
+    margin: 0 0 10px;
+    display: inline-block;
+    transition: .2s all ease;
+}
+._blog_darefit_card_cont_b:hover {
+    color: var(--color3) !important;
+}
+._blog_darefit_card_cont_b svg {
+    margin: 0 0 0 10px;
+    transition: .2s all ease;
+}
+._blog_darefit_card_cont_b:hover svg {
+    transform: translateX(10px);
+}
+._blog_darefit_card_date {
+    position: absolute;
+    bottom: 23px;
+    left: 30px;
+    background: var(--bg3);
+    padding: 3px;
+}
+._blog_darefit_card_date_inner {
+    border: 1px solid var(--color9);
+    box-sizing: border-box;
+    padding: 4px 12px;
+}
+._blog_darefit_card_date_t {
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color1);
+}
+._blog_darefit_card_date_p {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color1);
+}
+._blog_darefit_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 55px 0 0;
+}
+._blog_darefit_btn1 {
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    transition: .2s all ease;
+    position: relative;
+}
+._blog_darefit_btn1:before {
+    position: absolute;
+    content: "";
+    background-color: #DF2020;
+    width: 114px;
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+}
+._blog_darefit_btn1:hover {
+    text-decoration: none;
+    color: var(--color10);
+}
+/* responsive css */
+/* Desktop/Laptop */
+@media only screen and (min-width: 1600px) {}
+@media (max-width: 1399px) {
+    ._blog_darefit_cont_t {
+        font-size: 36px;
+    }
+    ._blog_darefit_cont_p {
+        font-size: 17px;
+        max-width: 46%;
+    }
+    ._blog_darefit_card_cont_p {
+        font-size: 17px;
+        max-width: 88%;
+    }
+    ._blog_darefit_btn1 {
+        font-size: 17px;
+    }
+}
+/* Desktop/Laptop */
+@media only screen and (max-width: 1199px) { 
+    ._blog_darefit_cont_t {
+        font-size: 32px;
+    }
+    ._blog_darefit_cont_p {
+        font-size: 16px;
+        max-width: 52%;
+    }
+    ._blog_darefit_card_cont_p {
+        font-size: 15px;
+        max-width: 100%;
+    }
+    ._blog_darefit_btn1 {
+        font-size: 16px;
+    }
+}
+/* Ipad pro */
+@media only screen and (max-width: 991px) {
+    ._blog_darefit_wrapper {
+        padding: 70px 0;
+    }
+    ._blog_darefit_cont_t {
+        font-size: 30px;
+    }
+    ._blog_darefit_cont_p {
+        font-size: 15px;
+        max-width: 65%;
+        margin: 0 auto 40px;
+    }
+    ._blog_darefit_card_cont {
+        text-align: center;
+    }
+    ._blog_darefit_card_date {
+        left: 45%;
+    }
+}
+/* Ipad/Mobile L */
+@media only screen and (max-width: 767px) {
+    ._blog_darefit_wrapper {
+        padding: 50px 0;
+    }
+    ._blog_darefit_cont_t {
+        font-size: 27px;
+    }
+    ._blog_darefit_cont_p {
+        font-size: 14px;
+        max-width: 82%;
+        margin: 0 auto 20px;
+    }
+    ._blog_darefit_btn {
+        margin: 35px 0 0;
+    }
+    ._blog_darefit_btn1 {
+        font-size: 15px;
+    }
+    ._blog_darefit_card_cont_p {
+        font-size: 14px;
+    }
+    ._blog_darefit_card_cont_b {
+        font-size: 13px;
+    }
+}
+/* Mobile */
+@media only screen and (max-width: 575px) {
+    ._blog_darefit_wrapper {
+        padding: 40px 0;
+    }
+    ._blog_darefit_cont_t {
+        font-size: 25px;
+    }
+    ._blog_darefit_cont_P {
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width: 420px) {
+    ._blog_darefit_wrapper {
+        padding: 30px 0;
+    }
+    ._blog_darefit_cont_t {
+        font-size: 23px;
+    }
+    ._blog_darefit_cont_p {
+        font-size: 13px;
+        max-width: 100%;
+    }
+    ._blog_darefit_card_cont_p {
+        font-size: 13px;
+    }
+    ._blog_darefit_btn1 {
+        font-size: 14px;
+    }
+    ._blog_darefit_btn {
+        margin: 20px 0 0;
+    }
+    ._blog_darefit_card_date {
+        left: 43%;
+    }
+}
+@media only screen and (max-width: 375px) {
+    ._blog_darefit_cont_t {
+        font-size: 22px;
+    }
+    ._blog_darefit_card_cont_p {
+        font-size: 12px;
+    }
+}
+/*blog darefit section end*/
+/*cta darefit section*/
+._cta_darefit_wrapper {
+    padding: 70px 0 80px;
+}
+._cta_darefit_cont_t1 {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0 0 18px;
+}
+._cta_darefit_cont_t2 {
+    font-family: Gelasio;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color1);
+    margin: 0 0 22px;
+}
+._cta_darefit_cont_p {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    mix-blend-mode: normal;
+    max-width: 49%;
+    margin: 0 auto 55px;
+}
+._cta_darefit_cont_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 55px 0 0;
+}
+._cta_darefit_cont_btn1 {
+    background: var(--color3);
+    border-radius: 4px;
+    border: 1px solid transparent;
+    padding: 20px 38px;
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s all ease;
+    width: 197px;
+    height: 60px;
+}
+._cta_darefit_cont_btn1:hover {
+    border-color: var(--color3) !important;
+    background: transparent;
+    color: var(--color3) !important;
+}
+/* responsive css */
+/* Desktop/Laptop */
+@media only screen and (min-width: 1600px) {}
+@media (max-width: 1399px) {
+    ._cta_darefit_wrapper {
+        padding: 60px 0 70px;
+    }
+    ._cta_darefit_cont_t2 {
+        font-size: 36px;
+    }
+    ._cta_darefit_cont_t1 {
+        font-size: 13px;
+    }
+    ._cta_darefit_cont_p {
+        font-size: 17px;
+        max-width: 54%;
+    }
+    ._cta_darefit_cont_btn1 {
+        font-size: 15px;
+        width: 175px;
+        height: auto;
+    }
+}
+/* Desktop/Laptop */
+@media only screen and (max-width: 1199px) { 
+    ._cta_darefit_wrapper {
+        padding: 40px 0 60px;
+    }
+    ._cta_darefit_cont_t2 {
+        font-size: 32px;
+    }
+    ._cta_darefit_cont_btn1 {
+        font-size: 14px;
+        width: 155px;
+        padding: 20px;
+    }
+    ._cta_darefit_cont_t1 {
+        font-size: 12px;
+    }
+    ._cta_darefit_cont_p {
+        font-size: 16px;
+        max-width: 58%;
+    }
+}
+/* Ipad pro */
+@media only screen and (max-width: 991px) {
+    ._cta_darefit_cont_t2 {
+        font-size: 30px;
+    }
+    ._cta_darefit_cont_btn1 {
+        font-size: 13px;
+        width: 130px;
+        padding: 17px;
+    }
+    ._cta_darefit_cont_p {
+        font-size: 15px;
+        max-width: 76%;
+    }
+}
+/* Ipad/Mobile L */
+@media only screen and (max-width: 767px) {
+    ._cta_darefit_wrapper {
+        padding: 40px 0 50px;
+    }
+    ._cta_darefit_cont_t2 {
+        font-size: 27px;
+    }
+    ._cta_darefit_cont_p {
+        font-size: 14px;
+        max-width: 85%;
+    }
+    ._cta_darefit_cont_btn1 {
+        width: 120px;
+        padding: 19px;
+    }
+}
+/* Mobile */
+@media only screen and (max-width: 575px) {
+    ._cta_darefit_cont_t2 {
+        font-size: 25px;
+    }
+    ._cta_darefit_cont_t1 {
+        letter-spacing: 2.0px;
+    }
+    ._cta_darefit_cont_p {
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width: 420px) {
+    ._cta_darefit_cont_t2 {
+        font-size: 21px;
+    }
+    ._cta_darefit_cont_p {
+        font-size: 12px;
+        max-width: 100%;
+    }
+}
+@media only screen and (max-width: 375px) {
+    ._cta_darefit_cont_t2 {
+        font-size: 18px;
+    }
+    ._cta_darefit_cont_btn1 {
+        font-size: 12px;
+        width: 110px;
+        padding: 16px;
+    }
+}
+/*cta darefit section end*/
+/*footer darefit section*/
+._footer_darefit_wrapper {
+    padding: 80px 0 36px;
+}
+._footer_darefit_logo1 {
+    max-width: 140px;
+}
+._footer_darefit_adr_p {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.6;
+    color: var(--color1);
+    margin: 0 0 68px;
+    max-width: 73%;
+}
+._footer_darefit_info_li {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    color: var(--color1);
+    margin: 0 0 27px;
+    position: relative;
+}
+._underline:before {
+    position: absolute;
+    content: "";
+    background-color: var(--color1);
+    width: 101px;
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+}
+._underline1:before {
+    position: absolute;
+    content: "";
+    background-color: var(--color1);
+    width: 130px;
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+}
+._footer_darefit_info_li:last-child {
+    margin: 0;
+}
+._footer_darefit_menu_li {
+    margin: 0 0 10px;
+}
+._footer_darefit_menu_item {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.2;
+    color: rgba(255, 255, 255, 0.75);
+    transition: .2s all ease;
+    display: inline-block;
+}
+._footer_darefit_menu_item:hover {
+    color: var(--color1);
+}
+._footer_darefit_copy_r8 {
+    margin: 68px 0 0;
+}
+._footer_darefit_copy_r8_t {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.2;
+    color: rgba(255, 255, 255, 0.65);
+}
+._footer_darefit_scroll {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+._footer_darefit_scroll1 {
+    background: var(--color3);
+    border-radius: 4px;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s all ease;
+}
+/* responsive css */
+/* Desktop/Laptop */
+@media only screen and (min-width: 1600px) {}
+@media (max-width: 1399px) {
+    ._footer_darefit_wrapper {
+        padding: 70px 0 30px;
+    }
+    ._footer_darefit_adr_p {
+        font-size: 22px;
+        max-width: 100%;
+    }
+}
+/* Desktop/Laptop */
+@media only screen and (max-width: 1199px) { 
+    ._footer_darefit_adr_p {
+        font-size: 19px;
+    }
+}
+/* Ipad pro */
+@media only screen and (max-width: 991px) {
+    ._footer_darefit_logo1 {
+        margin: 0 auto;
+    }
+    ._footer_darefit_info_li {
+        font-size: 13px;
+        text-align: center;
+        margin: 0 0 20px;
+    }
+    ._footer_darefit_adr_p {
+        font-size: 18px;
+        text-align: center;
+        margin: 0 0 25px;
+    }
+    ._footer_darefit_menu_li {
+        text-align: center;
+    }
+    ._footer_darefit_copy_r8 {
+        margin: 35px 0 0;
+    }
+    ._footer_darefit_copy_r8_t {
+        text-align: center;
+    }
+    ._footer_darefit_menu {
+        padding: 30px 0 0;
+    }
+    ._footer_darefit_scroll {
+        padding: 30px 0 0;
+    }
+}
+/* Ipad/Mobile L */
+@media only screen and (max-width: 767px) {
+    ._footer_darefit_wrapper {
+        padding: 50px 0 28px;
+    }
+    ._footer_darefit_adr_p {
+        font-size: 17px;
+    }
+}
+/* Mobile */
+@media only screen and (max-width: 575px) {
+    ._footer_darefit_adr_p {
+        font-size: 16px;
+    }
+    ._footer_darefit_info_li {
+        font-size: 12px;
+    }
+    ._footer_darefit_menu_item {
+        font-size: 12px;
+    }
+    ._footer_darefit_scroll {
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 420px) {
+    ._footer_darefit_copy_r8_t {
+        font-size: 11px;
+    }
+    ._footer_darefit_adr_p {
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 375px) {
+    ._footer_darefit_copy_r8_t {
+        font-size: 8px;
+    }
+}
+/*footer darefit section end*/
+/*------------------
+    Variable 
+------------------*/
+:root {
+    --color1: #fff;
+    --color2: #97999E;
+    --color3: #DF2020;
+    --color4: #C9CACD;
+    --color5: #27C499;
+    --color6: #D6D6D7;
+    --color7: #9B9FAB;
+    --color8: #454B5A;
+    --color9: #D37F00;
+    --color10: #cc1313;
+    --bg1:#000;
+    --bg2: #272B35;
+    --bg3: #F79F1A;
+    --bg4: #1D2027;
+}
