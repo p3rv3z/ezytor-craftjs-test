@@ -19,13 +19,56 @@ import { News } from '../../components/elements/News';
 import { Button } from '../../components/elements/button';
 import { Colums } from '../../components/elements/ColumSection';
 
+
+import { TestHeader } from '../../components/test/testHeader';
+import { TestFooter } from '../../components/test/testFooter';
+import { TestNav } from '../../components/test/testNav';
+import { TestDiv } from '../../components/test/testDiv';
+import { TestA } from '../../components/test/testA';
+import { TestImg } from '../../components/test/testImg';
+import { TestButton } from '../../components/test/testButton';
+import { TestSection } from '../../components/test/testSection';
+import { TestSvg } from '../../components/test/testSvg';
+import { TestP } from '../../components/test/testP';
+import { TestSpan } from '../../components/test/testSpan';
+import { TestUl } from '../../components/test/testUl';
+import { TestLi } from '../../components/test/testLi';
+import { TestH1 } from '../../components/test/testH1';
+import { TestH2 } from '../../components/test/testH2';
+import { TestH3 } from '../../components/test/testH3';
+import { TestH4 } from '../../components/test/testH4';
+import { TestH5 } from '../../components/test/testH5';
+import { TestH6 } from '../../components/test/testH6';
+
+
 function Home() {
     return (
         <div className="_editor_home_wrapper">
             <div className="_editor_home_wrap">
                 <div className="container-fluid _custom_container">
                     <div className="_layout_inner_wrap">
-                        <Editor resolver={{ Heading, Container, Main, Paragraph, Div, List, ListItem,Section, ColumSection,Row,Col,News }}>
+                        <Editor resolver={{
+                            Heading, Container, Main, Paragraph, Div, List, ListItem, Section, ColumSection, Row, Col, News, 
+                            TestHeader,
+                            TestFooter,
+                            TestNav,
+                            TestDiv,
+                            TestA,
+                            TestImg,
+                            TestButton,
+                            TestSection,
+                            TestSvg,
+                            TestP,
+                            TestSpan,
+                            TestUl,
+                            TestLi,
+                            TestH1,
+                            TestH2,
+                            TestH3,
+                            TestH4,
+                            TestH5,
+                            TestH6,
+                        }}>
                             <div class="row">
                                 <div className="col-xl-3 col-lg-3 col-md-12 col-sm-12 _custom_column">
                                     <Toolbox />

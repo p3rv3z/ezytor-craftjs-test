@@ -1,7 +1,7 @@
 import React from "react";
 import { useNode } from "@craftjs/core";
 
-export const testHeader = ({ children, styles, classes }) => {
+export const TestHeader = ({ children, styles, classes }) => {
 
   const { connectors: { connect, drag } } = useNode();
 
