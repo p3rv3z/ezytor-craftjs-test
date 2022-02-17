@@ -22,14 +22,6 @@ export const LayoutSettings = () => {
                 <h4 className="_add_tab_section_header_title">Layout</h4>
             </div>
             <div className="_add_tab_section_size">
-                {/* <div className="_add_tab_section_size_info">
-                    <div className="_add_tab_section_size_info_txt">
-                        <h4 className="_add_tab_section_drop_title">Font:</h4>
-                    </div>
-                    <input type="text" name="fontFamily" value={fontFamily} autocomplete="off" autocorrect="off" autocaptialize="off" spellcheck="false" data-automation-id="css-token-input" placeholder="Arial"
-                        onChange={handleChange}></input>
-                </div> */}
-
                 <div className="_add_tab_section_size_info">
                     <div className="_add_tab_section_size_info_txt">
                         <h4 className="_add_tab_section_drop_title">Display:</h4>

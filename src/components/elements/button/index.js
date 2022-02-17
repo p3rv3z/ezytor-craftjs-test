@@ -1,61 +1,73 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNode } from "@craftjs/core";
+import ContentEditable from "react-contenteditable";
 import { ButtonSettings } from "./ButtonSettings";
+const classNames = require('classnames');
 
-export const Button = ({ text, display, fontSize, fontWeight, lineHeight, color, textAlign, fontFamily, width, height, minWidth, maxWidth, minHeight, maxHeight, objectFit }) => {
+export const Button = ({ text, styles, properties }) => {
 
-  const { connectors: { connect, drag }, isActive } = useNode((node) => ({
-    isActive: node.events.selected
+  const { connectors: { connect, drag }, isActive, isHovered, actions: { setProp } } = useNode((node) => ({
+    isActive: node.events.selected,
+    isHovered: node.events.hovered,
   }));
 
-  // const selectedClass = (counyoutt == 0 && !isActive) ? "_empty" : (isActive ? "_active" : "")
-  const selectedClass = ""
+  const [editable, editableSet] = useState(true);
+  const classes = classNames('_heading', { '_selected': (isActive || isHovered) });
 
-  const styles = {
-    width,
-    height,
-    minWidth,
-    maxWidth,
-    minHeight,
-    maxHeight,
-    objectFit,
-    fontSize: `${fontSize}px`,
-    fontWeight,
-    lineHeight,
-    color,
-    textAlign,
-    fontFamily,
-    display
+  const enableEditMode = () => {
+    editableSet(false)
+  }
+
+  const disableEditMode = () => {
+    editableSet(true)
   }
 
   return (
-    <button
-      ref={ref => connect(drag(ref))}
-      className={`_button${selectedClass}`}
+    <ContentEditable
+      html={text}
+      innerRef={ref => connect(drag(ref))}
+      className={classes}
       style={styles}
-    >
-      {text}
-    </button>
+      disabled={editable}
+      onDoubleClick={enableEditMode}
+      onBlur={disableEditMode}
+      onChange={e =>
+        setProp(props =>
+          props.text = e.target.value.replace(/<\/?[^>]+(>|$)/g, "")
+        )
+      }
+      tagName="a"
+    />
   )
 }
 
 
 Button.craft = {
   props: {
-    width: "auto",
-    height: "auto",
-    minWidth: "auto",
-    maxWidth: "auto",
-    minHeight: "auto",
-    maxHeight: "auto",
-    objectFit: "cover",
-    text: "Heading",
-    fontSize: 20,
-    fontWeight: 500,
-    lineHeight: 1.2,
-    color: '#000',
-    textAlign: 'left',
-    fontFamily: 'Arial',
+    text: "Button",
+
+    styles: {
+      fontFamily: 'Arial',
+      fontSize: "20px",
+      fontWeight: "auto",
+      lineHeight: "auto",
+      color: '#000',
+      textAlign: 'left',
+
+      width: "auto",
+      height: "auto",
+      minWidth: "auto",
+      maxWidth: "auto",
+      minHeight: "auto",
+      maxHeight: "auto",
+      objectFit: "cover",
+
+      display: 'block'
+    },
+
+    properties: {
+      
+    }
   },
   related: {
     settings: ButtonSettings

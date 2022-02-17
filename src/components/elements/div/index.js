@@ -3,7 +3,7 @@ import { useNode } from "@craftjs/core";
 import { DivSettings } from "./DivSettings";
 const classNames = require('classnames');
 
-export const Div = ({children, styles}) => {
+export const Div = ({ children, styles }) => {
 
   const count = Children.count(children);
 
@@ -16,7 +16,7 @@ export const Div = ({children, styles}) => {
 
   return (
     <div ref={ref => connect(drag(ref))}
-      style = {styles}
+      style={styles}
       className={classes}
     >
       {children}
@@ -34,6 +34,14 @@ Div.craft = {
       minHeight: "auto",
       maxHeight: "auto",
       objectFit: "cover",
+      marginTop: "auto",
+      marginBottom: "auto",
+      marginLeft: "auto",
+      marginRight: "auto",
+      paddingTop: "auto",
+      paddingBottom: "auto",
+      paddingLeft: "auto",
+      paddingRight: "auto",
     }
   },
 

@@ -34,6 +34,14 @@ Section.craft = {
             minHeight: "auto",
             maxHeight: "auto",
             objectFit: "cover",
+            marginTop: "auto",
+            marginBottom: "auto",
+            marginLeft: "auto",
+            marginRight: "auto",
+            paddingTop: "auto",
+            paddingBottom: "auto",
+            paddingLeft: "auto",
+            paddingRight: "auto",
         }
     },
 

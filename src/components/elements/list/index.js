@@ -12,7 +12,7 @@ export const List = ({ children, styles }) => {
         isHovered: node.events.hovered,
     }));
 
-    const classes = classNames('_container', { '_empty _empty_list': !count, '_selected': (isActive || isHovered) });
+    const classes = classNames('_list', { '_empty _empty_list': !count, '_selected': (isActive || isHovered) });
 
     return (
         <ul ref={ref => connect(drag(ref))}
@@ -28,13 +28,21 @@ export const List = ({ children, styles }) => {
 List.craft = {
     props: {
         styles: {
-            width: "100%",
+            width: "auto",
             height: "auto",
             minWidth: "auto",
-            maxWidth: "auto",
+            maxWidth: "100%",
             minHeight: "auto",
             maxHeight: "auto",
             objectFit: "cover",
+            marginTop: "auto",
+            marginBottom: "auto",
+            marginLeft: "auto",
+            marginRight: "auto",
+            paddingTop: "auto",
+            paddingBottom: "auto",
+            paddingLeft: "auto",
+            paddingRight: "auto",
         }
     },
 

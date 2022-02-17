@@ -1,7 +1,4 @@
 /*---Common css --*/
-* {
-    box-sizing: content-box;
-}
 body {
     padding:0;
     margin:0;
@@ -310,7 +307,7 @@ input {
     padding: 6px 10px;
     border-radius: 6px;
     border: none;
-    width: 50%;
+    width: 50px;
     height: 30px;
     font-size: 12px;
     font-weight: 500;
@@ -416,9 +413,6 @@ input {
     border:1px solid #2700ff !important;
 }
 
-
-
-
 ._dragging {
     cursor: grabbing;
 }
@@ -433,7 +427,7 @@ input {
 }
 ._custom_col{
     /* background-color: rgba(255,10,10,.3); */
-    border: 1px dashed rgb(167 11 11);
+    outline: 1px dashed rgb(167 11 11);
     min-height: 40px;
 
 }
@@ -453,14 +447,14 @@ input {
 /*-- div block css --*/
 
 /*---list ----*/
-._list_item{
+/* ._list_item{
     outline: 1px dashed #555 !important;
     outline-offset: -1px !important;
     -webkit-box-shadow: inset 0 0 0 4px rgb(0 0 0 / 10%), inset 0 0 0 4px rgb(255 255 255 / 20%), inset 0 0 0 1px rgb(255 255 255 / 30%);
     box-shadow: inset 0 0 0 4px rgb(0 0 0 / 10%), inset 0 0 0 4px rgb(255 255 255 / 20%), inset 0 0 0 1px rgb(255 255 255 / 30%);
     height: 75px;
     min-width: 75px;
-}
+} */
 ._list_item2{
     outline: 1px dashed #555 !important;
     outline-offset: -1px !important;
@@ -657,6 +651,9 @@ input {
 }
 
 /* common */
+ul {
+    margin: 0px;
+}
 ._empty {
     outline: 1px dashed #555 !important;
     -webkit-box-shadow: inset 0 0 0 4px rgb(0 0 0 / 10%), inset 0 0 0 4px rgb(255 255 255 / 20%), inset 0 0 0 1px rgb(255 255 255 / 30%);
@@ -708,6 +705,15 @@ input {
     outline: 1px solid transparent;
 }
 ._empty_list {
+    height: 75px !important;
+}
+/* div  */
+
+/* div  */
+._list_item{
+    outline: 1px solid transparent;
+}
+._empty_list_item {
     height: 75px !important;
 }
 /* div  */
