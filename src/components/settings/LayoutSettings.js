@@ -2,14 +2,14 @@ import React from "react";
 import { useNode } from "@craftjs/core";
 
 export const LayoutSettings = () => {
-    const { actions: { setProp }, display } = useNode((node) => ({
-        display: node.data.props.display,
+    const { actions: { setProp }, styles } = useNode((node) => ({
+        styles: node.data.props.styles,
     }));
 
     const handleChange = (event) => {
         const { name, value } = event.target
         setProp(props => {
-            props[name] = value
+            props['styles'][name] = value
         });
     }
 
@@ -28,12 +28,12 @@ export const LayoutSettings = () => {
                     </div>
                     <div className="_add_tab_section_drop_select">
                         <select name="display" onChange={handleChange} class="form-select" aria-label="Default select example">
-                            <option value="block" selected={display == 'block'}>Block</option>
-                            <option value="grid" selected={display == 'grid'}>Grid</option>
-                            <option value="inline-flex" selected={display == 'inline-flex'}>Inline-flex</option>
-                            <option value="flex" selected={display == 'flex'}>Flex</option>
-                            <option value="inline-block" selected={display == 'inline-block'}>Inline-block</option>
-                            <option value="inline-grid" selected={display == 'inline-grid'}>Inline-grid</option>
+                            <option value="block" selected={styles.display == 'block'}>Block</option>
+                            <option value="grid" selected={styles.display == 'grid'}>Grid</option>
+                            <option value="inline-flex" selected={styles.display == 'inline-flex'}>Inline-flex</option>
+                            <option value="flex" selected={styles.display == 'flex'}>Flex</option>
+                            <option value="inline-block" selected={styles.display == 'inline-block'}>Inline-block</option>
+                            <option value="inline-grid" selected={styles.display == 'inline-grid'}>Inline-grid</option>
                         </select>
                     </div>
                 </div>

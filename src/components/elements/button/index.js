@@ -12,7 +12,7 @@ export const Button = ({ text, styles, properties }) => {
   }));
 
   const [editable, editableSet] = useState(true);
-  const classes = classNames('_heading', { '_selected': (isActive || isHovered) });
+  const classes = classNames('_button', { '_selected': (isActive || isHovered) });
 
   const enableEditMode = () => {
     editableSet(false)
@@ -31,6 +31,7 @@ export const Button = ({ text, styles, properties }) => {
       disabled={editable}
       onDoubleClick={enableEditMode}
       onBlur={disableEditMode}
+      {...properties}
       onChange={e =>
         setProp(props =>
           props.text = e.target.value.replace(/<\/?[^>]+(>|$)/g, "")
@@ -44,11 +45,11 @@ export const Button = ({ text, styles, properties }) => {
 
 Button.craft = {
   props: {
-    text: "Button",
+    text: "Button Text",
 
     styles: {
       fontFamily: 'Arial',
-      fontSize: "20px",
+      fontSize: "14px",
       fontWeight: "auto",
       lineHeight: "auto",
       color: '#000',
@@ -60,13 +61,22 @@ Button.craft = {
       maxWidth: "auto",
       minHeight: "auto",
       maxHeight: "auto",
-      objectFit: "cover",
+      objectFit: "auto",
 
-      display: 'block'
+      marginTop: "auto",
+      marginBottom: "auto",
+      marginLeft: "auto",
+      marginRight: "auto",
+      paddingTop: "9px",
+      paddingBottom: "9px",
+      paddingLeft: "15px",
+      paddingRight: "15px",
+
+      display: 'inline-block'
     },
 
     properties: {
-      
+      href: "#"
     }
   },
   related: {

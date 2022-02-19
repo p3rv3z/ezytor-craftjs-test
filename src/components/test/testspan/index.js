@@ -1,7 +1,7 @@
 import React from "react";
 import { useNode } from "@craftjs/core";
 
-export const Testspan = ({ children, styles, classes }) => {
+export const TestSpan = ({ children, styles, classes }) => {
 
   const { connectors: { connect, drag } } = useNode();
 

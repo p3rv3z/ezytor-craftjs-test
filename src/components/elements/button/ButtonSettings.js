@@ -3,6 +3,7 @@ import { useNode } from "@craftjs/core";
 import { TypographySettings } from "../../settings/TypographySettings";
 import { LayoutSettings } from "../../settings/LayoutSettings";
 import { SizeSettings } from "../../settings/SizeSettings";
+import { SpacingSettings } from "../../settings/SpacingSettings";
 
 export const ButtonSettings = () => {
     const { actions: { setProp }, fontSize } = useNode((node) => ({
@@ -13,6 +14,7 @@ export const ButtonSettings = () => {
         <>
             <SizeSettings />
             <LayoutSettings />
+            <SpacingSettings />
             <TypographySettings />
         </>
     )
