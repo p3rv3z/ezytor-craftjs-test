@@ -683,6 +683,9 @@ ul {
     min-width: 780px;
     outline: 1px solid transparent;
 }
+._empty_container {
+    height: 75px !important;
+}
 /* container  */
 
 /* div  */
@@ -717,3 +720,17 @@ ul {
     height: 75px !important;
 }
 /* div  */
+
+/* button  */
+._button {
+    display: inline-block;
+    background-color: #3898EC;
+    color: white !important;
+    border: 0;
+    line-height: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 0;
+    outline: 1px solid transparent;
+}
+/* button  */

@@ -11,7 +11,7 @@ export const Container = ({ children, styles }) => {
         isHovered: node.events.hovered,
     }));
 
-    const classes = classNames('_container', { '_empty': !count, '_selected': (isActive || isHovered) });
+    const classes = classNames('_container', { '_empty _empty_container': !count, '_selected': (isActive || isHovered) });
 
     return (
         <div ref={ref => connect(drag(ref))}
@@ -28,12 +28,13 @@ Container.craft = {
     props: {
         styles: {
             width: "760px",
-            height: "75px",
+            height: "auto",
             minWidth: "auto",
             maxWidth: "auto",
             minHeight: "auto",
             maxHeight: "auto",
             objectFit: "cover",
+            
             marginTop: "auto",
             marginBottom: "auto",
             marginLeft: "auto",
