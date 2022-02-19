@@ -4,6 +4,28 @@ import { Element, useNode ,useEditor} from "@craftjs/core";
 import { Col } from "../Col";
 
 
+import { TestHeader } from '../../test/testHeader';
+import { TestFooter } from '../../test/testFooter';
+import { TestNav } from '../../test/testNav';
+import { TestDiv } from '../../test/testDiv';
+import { TestA } from '../../test/testA';
+import { TestImg } from '../../test/testImg';
+import { TestButton } from '../../test/testButton';
+import { TestSection } from '../../test/testSection';
+import { TestSvg } from '../../test/testSvg';
+import { TestPath } from '../../test/testPath';
+import { TestP } from '../../test/testP';
+import { Testspan } from '../../test/testspan';
+import { TestUl } from '../../test/testUl';
+import { TestLi } from '../../test/testLi';
+import { TestH1 } from '../../test/testH1';
+import { TestH2 } from '../../test/testH2';
+import { TestH3 } from '../../test/testH3';
+import { TestH4 } from '../../test/testH4';
+import { TestH5 } from '../../test/testH5';
+import { TestH6 } from '../../test/testH6';
+
+
 export const News = ({children}) => {
     const { connectors: { connect, drag }, isActive, actions: { setProp } } = useNode((node) => ({
         isActive: node.events.selected
@@ -16,103 +38,108 @@ export const News = ({children}) => {
 
 	const customElements = {
 		'div':{
-			type:testDiv,
-			name:'div',
+			type:TestDiv,
+			name:'TestDiv',
 			displayName:'div'
 		},
 		'header':{
-			type:testHeader,
-			name:'header',
+			type:TestHeader,
+			name:'TestHeader',
 			displayName:'header'
 		},
 		'nav':{
-			type:testNav,
-			name:'nav',
+			type:TestNav,
+			name:'TestNav',
 			displayName:'nav'
 		},
 		'a':{
-			type:testA,
-			name:'a',
+			type:TestA,
+			name:'TestA',
 			displayName:'a'
 		},
 		'img':{
-			type:testImg,
-			name:'img',
+			type:TestImg,
+			name:'TestImg',
 			displayName:'img'
 		},
 		'button':{
-			type:testButton,
-			name:'button',
+			type:TestButton,
+			name:'TestButton',
 			displayName:'button'
 		},
 		'span':{
-			type:testSpan,
-			name:'span',
+			type:Testspan,
+			name:'Testspan',
 			displayName:'span'
 		},
 		'ul':{
-			type:testUl,
-			name:'ul',
+			type:TestUl,
+			name:'TestUl',
 			displayName:'ul'
 		},
 		'li':{
-			type:testLi,
-			name:'li',
+			type:TestLi,
+			name:'TestLi',
 			displayName:'li'
 		},
 		'h1':{
-			type:testH1,
-			name:'h1',
+			type:TestH1,
+			name:'TestH1',
 			displayName:'h1'
 		},
 		'h2':{
-			type:testH2,
-			name:'h2',
+			type:TestH2,
+			name:'TestH2',
 			displayName:'h2'
 		},
 		'h3':{
-			type:testH3,
-			name:'h3',
+			type:TestH3,
+			name:'TestH3',
 			displayName:'h3'
 		},
 		'h4':{
-			type:testH4,
-			name:'h4',
+			type:TestH4,
+			name:'TestH4',
 			displayName:'h4'
 		},
 		'h5':{
-			type:testH5,
-			name:'h5',
+			type:TestH5,
+			name:'TestH5',
 			displayName:'h5'
 		},
+		'h6':{
+			type:TestH6,
+			name:'TestH6',
+			displayName:'h6'
+		},
 		'div':{
-			type:testDiv,
-			name:'div',
+			type:TestDiv,
+			name:'TestDiv',
 			displayName:'div'
 		},
 		'p':{
-			type:testP,
-			name:'p',
+			type:TestP,
+			name:'TestP',
 			displayName:'p'
 		},
 		'svg':{
-			type:testSvg,
-			name:'svg',
+			type:TestSvg,
+			name:'TestSvg',
 			displayName:'svg'
 		},
 		'path':{
-			type:testPath,
-			name:'path',
+			type:TestPath,
+			name:'TestPath',
 			displayName:'path'
 		},
 		'section':{
-			type:testSection,
-			name:'section',
+			type:TestSection,
+			name:'TestSection',
 			displayName:'section'
 		},
 		'footer':{
-			type:testFooter,
-			name:'footer',
+			type:TestFooter,
+			name:'TestFooter',
 			displayName:'footer'
 		},
 	}
@@ -122,7 +149,7 @@ export const News = ({children}) => {
        
     
         // Create a new valid Node object from the fresh Node
-        const nodeTee = query.parseReactElement(  <div style={{background: '#262a34'}}>
+        const nodeList = query.parseReactElement(  <div style={{background: '#262a34'}}>
 		<header className="_header_darefit_wrapper" id="header">
 			<nav className="navbar navbar-expand-lg navbar-dark _header_darefit_navbar">
 				<div className="container">
@@ -719,18 +746,29 @@ export const News = ({children}) => {
 			</div>
 		</footer>
         </div>).toNodeTree();
-        // actions.addNodeTree(nodeTree);
+        // actions.addNodeTree(nodeList);
 
 		console.log("node-tree")
-		console.log(nodeTree)
-		const keys = Object.keys(nodeTree.nodes)
+		console.log(nodeList)
+		const keys = Object.keys(nodeList.nodes)
 
 		for(let d of keys){
-			const node = nodeTree.nodes[d];
+			const node = nodeList.nodes[d];
+			// const type = JSON.parse(JSON.stringify(node.data.type)) 
+			// node.data.isCanvas = true
+			// console.log(type)
+			// node.data.name = type
+			// node.data.displayName = type
+			// node.data.type = customElements[type].type
+
+			const {type, name, displayName} = customElements[node.data.type];
+            console.log( 'node',node)
+			// const type = JSON.parse(JSON.stringify(node.data.type)) 
 			node.data.isCanvas = true
-			node.data.type = customElements[node.data.type].type
-			node.data.name = customElements[node.data.type].name
-			node.data.displayName = customElements[node.data.type].displayName
+			// console.log(type)
+			node.data.name = name
+			node.data.displayName = displayName
+			node.data.type = type
 
 			// node.rules.canDrag = true
 			// if(node.data.type == 'img'){
@@ -738,8 +776,8 @@ export const News = ({children}) => {
 			// }
 		}
 		console.log("node---updated--tree")
-		console.log(nodeTree)
-        actions.addNodeTree(nodeTree, 'ROOT');
+		console.log(nodeList)
+        actions.addNodeTree(nodeList, 'ROOT');
         // actions.setOptions((options) => {
         //     // console.log('options--------------------')
         //     // console.log(options)
