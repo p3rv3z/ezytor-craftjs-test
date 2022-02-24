@@ -6,13 +6,13 @@ export const TestImg = ({ children, styles, className, src }) => {
   const { connectors: { connect, drag } } = useNode();
 
   return (
-    <div ref={ref => connect(drag(ref))}
+    <img ref={ref => connect(drag(ref))}
       style={styles}
       className={className}
       src={src}
     >
       {children}
-    </div>
+    </img>
   )
 }
 

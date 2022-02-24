@@ -1,7 +1,7 @@
 import React from 'react';
 // import Middle from '../../components/middle/Middle';
 // import RightSidebar from '../../components/rightsidebar/RightSidebar';
-import Toolbox from '../../components/Toolbox';
+import Toolbox from '../../components/toolbox';
 import SettingsPanel from '../../components/settingsPanel';
 import { Editor, Frame, Element } from "@craftjs/core";
 import { Heading } from '../../components/elements/heading'

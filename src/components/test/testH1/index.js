@@ -6,12 +6,12 @@ export const TestH1 = ({ children, styles, className }) => {
   const { connectors: { connect, drag } } = useNode();
 
   return (
-    <div ref={ref => connect(drag(ref))}
+    <h1 ref={ref => connect(drag(ref))}
       style={styles}
       className={className}
     >
       {children}
-    </div>
+    </h1>
   )
 }
 
