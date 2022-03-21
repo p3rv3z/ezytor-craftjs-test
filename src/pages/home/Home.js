@@ -50,7 +50,7 @@ function Home() {
                 <div className="container-fluid _custom_container">
                     <div className="_layout_inner_wrap">
                         <Editor resolver={{
-                            Heading,Image, Container, Main, Paragraph, Div, List, ListItem, Section, ColumSection, Row, Col, News, 
+                            Heading, Image, Container, Main, Paragraph, Div, List, ListItem, Section, ColumSection, Row, Col, News,
                             TestHeader,
                             TestFooter,
                             TestNav,
@@ -74,23 +74,22 @@ function Home() {
                         }}>
                             <div class="row">
                                 <div className="col-xl-3 col-lg-3 col-md-12 col-sm-12 _custom_column">
-                                   
+
                                     <Toolbox />
                                 </div>
                                 <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12 _custom_column">
                                     <section className="_middle_wrapper">
                                         <div className="_layout_middle_inner">
-                                        <Frame>
-                                                                    {/* <Middle /> */}
-                                                                    <Element is="div" id="main" style={{width: "100%", height: "100%"}} canvas>
-                                                                        {/* <Heading text="Heading" /> */}
-                                                                        <News/>
-                                                                    </Element>
-                                                                
-                                                                </Frame>
-                                            </div>
-                                        </section>
-                                    
+                                            <Frame>
+                                                <Element is="div" id="main" style={{ width: "100%", height: "100%", padding: '100px' }} canvas>
+
+                                                <News/>
+                                                </Element>
+
+                                            </Frame>
+                                        </div>
+                                    </section>
+
                                 </div>
                                 <div className="col-xl-3 col-lg-3 col-md-12 col-sm-12 _custom_column">
                                     <SettingsPanel />

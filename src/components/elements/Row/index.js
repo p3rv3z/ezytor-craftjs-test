@@ -38,11 +38,11 @@ export const Row = ({children}) => {
     //         enabled: state.options.enabled,
     //       }));
     // console.log("---------currentJson----------")
-    console.log(currentJson)
+    // console.log(currentJson)
     // console.log(currentJson)
 
     const addCol = () =>{
-        console.log("calling addCol");
+        // console.log("calling addCol");
         const collist = node(id).descendants();
         const colLenth = collist.length
         var totalCol = Math.floor(12/(colLenth+1))
@@ -53,11 +53,11 @@ export const Row = ({children}) => {
                 props['className'] =  `col col-md-${totalCol} _custom_col text-center`;
             });
         }
-        console.log(`col-md-${totalCol}`)
+        // console.log(`col-md-${totalCol}`)
         var extraCol = (totalCol*(colLenth+1)) == 12 ? 0 : 12-totalCol*(colLenth+1)
-        console.log('extraCol')
-        console.log(totalCol)
-        console.log(extraCol)
+        // console.log('extraCol')
+        // console.log(totalCol)
+        // console.log(extraCol)
        
         const nodeTree = query.parseReactElement(<Element is={Col} id="col3" className={`col col-md-${totalCol+extraCol} _custom_col text-center`}  canvas/>).toNodeTree();
         actions.addNodeTree(nodeTree, id);
